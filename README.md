@@ -1,0 +1,1 @@
+Original curric 432 project readme.
