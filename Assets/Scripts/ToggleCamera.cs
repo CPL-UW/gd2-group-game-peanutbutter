@@ -20,13 +20,17 @@ public class ToggleCamera : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             playerOneCamera.SetActive(true);
+            playerOneCamera.GetComponent<AudioListener>().enabled = true;
             playerTwoCamera.SetActive(false);
+            playerTwoCamera.GetComponent<AudioListener>().enabled = false;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             playerOneCamera.SetActive(false);
+            playerOneCamera.GetComponent<AudioListener>().enabled = false;
             playerTwoCamera.SetActive(true);
+            playerTwoCamera.GetComponent<AudioListener>().enabled = true;
         }
 
     }
