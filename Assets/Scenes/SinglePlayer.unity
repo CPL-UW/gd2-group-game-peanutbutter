@@ -403,7 +403,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.3, y: 1.6}
   m_EdgeRadius: 0
 --- !u!50 &197542883
 Rigidbody2D:
@@ -1248,7 +1248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.3, y: 1.6}
   m_EdgeRadius: 0
 --- !u!50 &956927242
 Rigidbody2D:
@@ -2031,6 +2031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79a48af5fb5d0f42951c241848e3db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedCard: {fileID: 0}
 --- !u!114 &1694894070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,7 +2337,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.3, y: 1.6}
   m_EdgeRadius: 0
 --- !u!1 &1851392638
 GameObject:
@@ -2549,7 +2550,7 @@ GameObject:
   - component: {fileID: 2132979692}
   m_Layer: 0
   m_Name: Combat
-  m_TagString: PlayerCombat
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

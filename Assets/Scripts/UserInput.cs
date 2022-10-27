@@ -5,6 +5,8 @@ using System.Linq;
 
 public class UserInput : MonoBehaviour
 {
+    public GameObject selectedCard;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,8 @@ public class UserInput : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-            print(mousePosition);
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10));
+            // print(mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit)
             {
@@ -40,12 +42,12 @@ public class UserInput : MonoBehaviour
                 else if (hit.collider.CompareTag("PlayerCombat"))
                 {
                     // Clicked place to put card
-                    PlayerCombat();
+                    PlayerCombat(hit.collider.gameObject);
                 }
                 else if (hit.collider.CompareTag("PlayerCard"))
                 {
                     // Clicked place to put card
-                    PlayerCard();
+                    PlayerCard(hit.collider.gameObject);
                 }
             }
         }
@@ -54,21 +56,28 @@ public class UserInput : MonoBehaviour
     void PlayerDeck()
     {
         //print("Clicked on deck");
-        Debug.Log("deck");
+        // Debug.Log("deck");
     }
 
     void PlayerHand()
     {
-        print("Clicked on hand");
+        // print("Clicked on hand");
     }
 
-    void PlayerCombat()
+    void PlayerCombat(GameObject selected)
     {
-        print("Clicked on arena");
+        // print("Clicked on arena");
+        if (selectedCard)
+        {
+            selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
+        }
+        selectedCard = null;
     }
 
-    void PlayerCard()
+    void PlayerCard(GameObject selected)
     {
-        print("Clicked on card");
+        // print("Clicked on card");
+
+        selectedCard = selected;
     }
 }

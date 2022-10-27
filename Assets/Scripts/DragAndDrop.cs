@@ -27,7 +27,8 @@ public class DragAndDrop : MonoBehaviour
     {
         if (isDragging)
         {
-            Vector2 mousePosition = Camera.current.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            // Vector2 mousePosition = Camera.allCameras[0].ScreenToWorldPoint(Input.mousePosition) - transform.position;
             transform.Translate(mousePosition);
         }
     }
