@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: 37449036808e1c5408047cd07391e83f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed416de99811a84db0bd79018b96601
+      internalID: -890502913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7709be02adbd4e74ea1b430cbd98f20f
+      internalID: -229795380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8feba3beae2aab443a21f25cc55eb44c
+      internalID: 1490699657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b7e0023aeda574089d1a4532274e84
+      internalID: 369457548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_4
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efeb40afa9d92dc48a4fb1bed12b6ef0
+      internalID: -786942583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_5
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaeb2484acd8bae4db83e2423e9381f0
+      internalID: -789112558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_6
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca4b29255bcf2246b3dc2d946c4bcec
+      internalID: -1885407417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_7
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a0228fd429cb144883cffca32eb272
+      internalID: -46013655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_8
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0028e92b422a6874ba65dd0d98a6040b
+      internalID: -211311750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_9
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c86e9241d7f594ebcd222f55741b54
+      internalID: -2081607374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2e4a8882857f64f8bb1638065644d2
+      internalID: 629550564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_11
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fe3a5ec4d161c4891bb3398e6ad9e8
+      internalID: 78963054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_12
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376c740211e6e4b469a3fe313ad57ad2
+      internalID: -1509924709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_13
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764bca9b059f33a499e504f9d6118c73
+      internalID: -1735889901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_14
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3139e6bd7fc4e574ca81adce6dd61ab7
+      internalID: 20406250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_15
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd709833082e7e34eb09b51f2ad51f58
+      internalID: -1561621832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_16
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4265569930e5a04dad982c229ab4e9d
+      internalID: -651779189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_17
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8255bac9df990d84792134383a74e7bb
+      internalID: 115731085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_18
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fcd0adef2bb08449367be82567a1a3
+      internalID: -637118127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_19
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14c0b3dbfaaac246acfc611348616ac
+      internalID: 329973226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5dac95620b8554192ff8db27c924ea
+      internalID: -1015046631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd8f04f7df22d84a9f185003de66abf
+      internalID: 626914307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_22
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66df4bfa3fa8d241b3663863ac356b7
+      internalID: 90798919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_23
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729fa7c16632e8941900ea94067b86c8
+      internalID: -1977165784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_24
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48d106338b9d8445b28b359717c246a
+      internalID: 482171619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_25
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4094974bb47effc4eaf5dc420fdd9b69
+      internalID: 745746121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_26
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28743fc50a9ef5a4fa38cce091167f16
+      internalID: 1767078944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_27
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec6598ff3fed9d42bf49d63788bfc77
+      internalID: 502443799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_28
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc867c6abd34659408abfaee5de08bcf
+      internalID: 2008535757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_29
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f61685e3b33c9b4c946e7de3da23c92
+      internalID: 280229105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908aeae5d920cd24994faf8f16d1c8b8
+      internalID: -1229061764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_31
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59eef5e7ef85fd42894ef49928c8548
+      internalID: -1241833349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_32
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e1d91ed54ce8647ae66f0553e5e9d2
+      internalID: 941590114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_33
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c062bc6f7ebb93344afabb1c00b900d7
+      internalID: 1303808223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_34
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cf7badb660fe5499a1bf21aeaca34c
+      internalID: 1101568392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_35
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46264e6bd6f68d34f9080c57a1385d60
+      internalID: 1285710312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_36
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1099414b3e8b6584999dc2cd188b548e
+      internalID: -507251518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_37
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea46a8ac2b86f14b8b7e9f8a35ebc04
+      internalID: -2069423969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_38
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20531682c7de2845ad493e3192cff1b
+      internalID: 1985333037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_39
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2eff839ab905b04184f3db34c9641a8
+      internalID: 992239777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991f017f52cdb0a48ae1bbf5407db7f9
+      internalID: 2051234988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_41
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9baec678e26d6714abd7f367c579397d
+      internalID: 1099612461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_42
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb237746481dd64e8d60a7194dffed6
+      internalID: 512500532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_43
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0096b213eb922a047b9859825fb26665
+      internalID: 871101096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_44
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b64156e1794ccb45ac4461987f03b52
+      internalID: -1741752080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_45
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4daade9ac6916e04681033fb7add40fc
+      internalID: -979764719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_46
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebf646d31234814796b037027a6aef9
+      internalID: 610832174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_47
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749c20c2271025444b5f539a4b960c5d
+      internalID: -1345928487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_48
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091367b02a542714dbe6f5eedcaeb171
+      internalID: -1919433786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_49
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1000
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4294374a4fa0cf41a52eefe768c67e1
+      internalID: 2025376135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd7ae863e0bf6f4fa911a296887c464
+      internalID: -846237328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_51
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b8b48bf626ec419e51ea83abb77ad
+      internalID: -1542433929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_52
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e434dc5f8d47a8b469273639ebf37609
+      internalID: -1107238274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba200e42966b00445aa073e654fa85dc
+      internalID: 474768106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_54
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a86352656b9de54a891fd9cddb94474
+      internalID: 1373315416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_55
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f537863900eb841b5b8d865b0d6727
+      internalID: 2100971527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_56
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10320d71285b0e74ab350b9ad269ccf2
+      internalID: -1853268216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_57
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a702726c575c84408fb4a091ae0b7d5
+      internalID: 1334714231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_58
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbc39669f007ae498d003c36534d78b
+      internalID: 1447067835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_59
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 500
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d66dbc76ca504aabc82eb1515565c
+      internalID: -275326629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bef52801f372741a2b24c9d89e2cdb
+      internalID: 217075395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_61
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f319d8915021e294b9be86e6996cbed6
+      internalID: 1644748408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_62
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c1e3360c9fd940bd29ea1d5d2d5f8
+      internalID: -884222562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_63
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bab0587b708c243966afadbefa05cd
+      internalID: -445349425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_64
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dda478733abba442b19be1d944564bd
+      internalID: 1221385441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_65
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7945885845a42847813879608315880
+      internalID: 217371293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_66
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7149cef796cf24b9750cb98d70f870
+      internalID: -1808588843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_67
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a3791572b6a5444ab0b1edf95428cc
+      internalID: 441457545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_68
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e3b83405536ac43ade238873446bb6
+      internalID: -94798154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event Horizon Card Sheet Small_69
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 350
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c34307a4fcf8844af036c6816d4465
+      internalID: -1896806217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Event Horizon Card Sheet Small_48: -1919433786
+      Event Horizon Card Sheet Small_46: 610832174
+      Event Horizon Card Sheet Small_50: -846237328
+      Event Horizon Card Sheet Small_51: -1542433929
+      Event Horizon Card Sheet Small_20: -1015046631
+      Event Horizon Card Sheet Small_38: 1985333037
+      Event Horizon Card Sheet Small_56: -1853268216
+      Event Horizon Card Sheet Small_59: -275326629
+      Event Horizon Card Sheet Small_67: 441457545
+      Event Horizon Card Sheet Small_44: -1741752080
+      Event Horizon Card Sheet Small_68: -94798154
+      Event Horizon Card Sheet Small_5: -789112558
+      Event Horizon Card Sheet Small_37: -2069423969
+      Event Horizon Card Sheet Small_65: 217371293
+      Event Horizon Card Sheet Small_54: 1373315416
+      Event Horizon Card Sheet Small_6: -1885407417
+      Event Horizon Card Sheet Small_22: 90798919
+      Event Horizon Card Sheet Small_29: 280229105
+      Event Horizon Card Sheet Small_17: 115731085
+      Event Horizon Card Sheet Small_33: 1303808223
+      Event Horizon Card Sheet Small_36: -507251518
+      Event Horizon Card Sheet Small_57: 1334714231
+      Event Horizon Card Sheet Small_0: -890502913
+      Event Horizon Card Sheet Small_14: 20406250
+      Event Horizon Card Sheet Small_30: -1229061764
+      Event Horizon Card Sheet Small_1: -229795380
+      Event Horizon Card Sheet Small_31: -1241833349
+      Event Horizon Card Sheet Small_40: 2051234988
+      Event Horizon Card Sheet Small_64: 1221385441
+      Event Horizon Card Sheet Small_13: -1735889901
+      Event Horizon Card Sheet Small_26: 1767078944
+      Event Horizon Card Sheet Small_53: 474768106
+      Event Horizon Card Sheet Small_25: 745746121
+      Event Horizon Card Sheet Small_45: -979764719
+      Event Horizon Card Sheet Small_21: 626914307
+      Event Horizon Card Sheet Small_11: 78963054
+      Event Horizon Card Sheet Small_18: -637118127
+      Event Horizon Card Sheet Small_8: -211311750
+      Event Horizon Card Sheet Small_47: -1345928487
+      Event Horizon Card Sheet Small_52: -1107238274
+      Event Horizon Card Sheet Small_61: 1644748408
+      Event Horizon Card Sheet Small_35: 1285710312
+      Event Horizon Card Sheet Small_19: 329973226
+      Event Horizon Card Sheet Small_49: 2025376135
+      Event Horizon Card Sheet Small_3: 369457548
+      Event Horizon Card Sheet Small_15: -1561621832
+      Event Horizon Card Sheet Small_27: 502443799
+      Event Horizon Card Sheet Small_60: 217075395
+      Event Horizon Card Sheet Small_16: -651779189
+      Event Horizon Card Sheet Small_39: 992239777
+      Event Horizon Card Sheet Small_7: -46013655
+      Event Horizon Card Sheet Small_12: -1509924709
+      Event Horizon Card Sheet Small_34: 1101568392
+      Event Horizon Card Sheet Small_69: -1896806217
+      Event Horizon Card Sheet Small_66: -1808588843
+      Event Horizon Card Sheet Small_4: -786942583
+      Event Horizon Card Sheet Small_2: 1490699657
+      Event Horizon Card Sheet Small_9: -2081607374
+      Event Horizon Card Sheet Small_23: -1977165784
+      Event Horizon Card Sheet Small_28: 2008535757
+      Event Horizon Card Sheet Small_24: 482171619
+      Event Horizon Card Sheet Small_62: -884222562
+      Event Horizon Card Sheet Small_41: 1099612461
+      Event Horizon Card Sheet Small_58: 1447067835
+      Event Horizon Card Sheet Small_63: -445349425
+      Event Horizon Card Sheet Small_10: 629550564
+      Event Horizon Card Sheet Small_32: 941590114
+      Event Horizon Card Sheet Small_42: 512500532
+      Event Horizon Card Sheet Small_43: 871101096
+      Event Horizon Card Sheet Small_55: 2100971527
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
