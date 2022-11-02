@@ -13,8 +13,10 @@ public class Game : MonoBehaviour
     public GameObject playerHandPos;
     public GameObject computerHandPos;
 
+    public ScoreManager scoreManager;
+
     public static string[] suits = new string[] {"C","D","H","S"};
-    public static string[] values = new string[] { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+    public static string[] values = new string[] { "A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
 
     public List<string> playerDeck;
     public List<string> computerDeck;
@@ -27,6 +29,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreManager = FindObjectOfType<ScoreManager>();
         PlayCards();
     }
 
@@ -40,29 +43,35 @@ public class Game : MonoBehaviour
     {
         playerDeck = GenerateDeck();
         Shuffle(playerDeck);
-        computerDeck = GenerateDeck();
+        computerDeck = GenerateDeck(false);
         Shuffle(computerDeck);
 
-        // Test the cards in the deck
-        foreach (string card in playerDeck)
-        {
-            //print(card);
-        }
         GameSort(playerDeck, playerHand);
         Deal(playerDeck, playerDeckPos, playerCardPrefab, playerHand, playerHandPos);
         GameSort(computerDeck, computerHand);
         Deal(computerDeck, computerDeckPos, computerCardPrefab, computerHand, computerHandPos);
     }
 
-    public static List<string> GenerateDeck()
+    public static List<string> GenerateDeck(bool isPlayer1 = true)
     {
         List<string> newDeck = new List<string>();
         foreach (string s in suits)
         {
-            foreach (string v in values)
+            if (isPlayer1)
             {
-                newDeck.Add(s + v);
+                foreach (string v in values)
+                {
+                    newDeck.Add(s + v);
+                }
             }
+            else
+            {
+                foreach (string v in values)
+                {
+                    newDeck.Add(v + s);
+                }
+            }
+            
         }
         return newDeck;
     }

@@ -7,8 +7,20 @@ TagManager:
   - Card
   - PlayerDeck
   - PlayerHand
-  - PlayerCombat
   - PlayerCard
+  - ComputerCard
+  - p1ComTL
+  - p1ComBL
+  - p1ComTC
+  - p1ComBC
+  - p1ComTR
+  - p1ComBR
+  - p2ComTL
+  - p2ComBL
+  - p2ComTC
+  - p2ComBC
+  - p2ComTR
+  - p2ComBR
   layers:
   - Default
   - TransparentFX
