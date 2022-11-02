@@ -171,11 +171,11 @@ public class UserInput : MonoBehaviour
         int p2CenCol = p2CombatPos[0, 1] + p2CombatPos[1, 1];
         int p2RigCol = p2CombatPos[0, 2] + p2CombatPos[1, 2];
 
-        if (p1LefCol > p2LefCol)
+        if (p1LefCol > p2RigCol)
         {
             p1ColWins++;
         }
-        else if (p2LefCol > p1LefCol)
+        else if (p2RigCol > p1LefCol)
         {
             p2ColWins++;
         }
@@ -189,11 +189,11 @@ public class UserInput : MonoBehaviour
             p2ColWins++;
         }
 
-        if (p1RigCol > p2RigCol)
+        if (p1RigCol > p2LefCol)
         {
             p1ColWins++;
         }
-        else if (p2RigCol > p1RigCol)
+        else if (p2LefCol > p1RigCol)
         {
             p2ColWins++;
         }
@@ -201,12 +201,12 @@ public class UserInput : MonoBehaviour
         if (p1ColWins > p2ColWins)
         {
             print("Player 1 wins!");
-            scoreManager.p1Score++;
+            scoreManager.UpdateP1Score();
         }
         else if (p2ColWins > p1ColWins)
         {
             print("Player 2 wins!");
-            scoreManager.p2Score++;
+            scoreManager.UpdateP2Score();
         }
         else
         {

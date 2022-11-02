@@ -6,11 +6,18 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager instance;
+    
     public TextMeshProUGUI p1ScoreText;
     public TextMeshProUGUI p2ScoreText;
 
     public int p1Score = 0;
     public int p2Score = 0;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +30,17 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateP1Score()
+    {
+        p1Score++;
+        p1ScoreText.text = "Score: " + p1Score.ToString();
+    }
+
+    public void UpdateP2Score()
+    {
+        p2Score++;
+        p2ScoreText.text = "Score: " + p2Score.ToString();
     }
 }

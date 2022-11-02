@@ -36,7 +36,14 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (scoreManager.p1Score >= 7)
+        {
+            print("Player 1 Wins!!!");
+        }
+        else if (scoreManager.p2Score >= 7)
+        {
+            print("Player 2 Wins!!!");
+        }
     }
 
     public void PlayCards()
