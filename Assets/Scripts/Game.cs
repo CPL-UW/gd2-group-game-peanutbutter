@@ -39,10 +39,12 @@ public class Game : MonoBehaviour
         if (scoreManager.p1Score >= 7)
         {
             print("Player 1 Wins!!!");
+            scoreManager.ResetScore();
         }
         else if (scoreManager.p2Score >= 7)
         {
             print("Player 2 Wins!!!");
+            scoreManager.ResetScore();
         }
     }
 
@@ -53,6 +55,11 @@ public class Game : MonoBehaviour
         computerDeck = GenerateDeck(false);
         Shuffle(computerDeck);
 
+        StartOfTurn();
+    }
+
+    public void StartOfTurn()
+    {
         GameSort(playerDeck, playerHand);
         Deal(playerDeck, playerDeckPos, playerCardPrefab, playerHand, playerHandPos);
         GameSort(computerDeck, computerHand);

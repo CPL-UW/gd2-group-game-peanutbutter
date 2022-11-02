@@ -10,6 +10,9 @@ public class UserInput : MonoBehaviour
     private ToggleCamera toggleCamera;
     private ScoreManager scoreManager;
 
+    private List<GameObject> p1PlayedCards;
+    private List<GameObject> p2PlayedCards;
+
     public static bool isP1Turn = true;
     private int[,] p1CombatPos = new int[2,3];
     private int[,] p2CombatPos = new int[2,3];
@@ -17,6 +20,8 @@ public class UserInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        p1PlayedCards = new List<GameObject>();
+        p2PlayedCards = new List<GameObject>();
         game = FindObjectOfType<Game>();
         toggleCamera = FindObjectOfType<ToggleCamera>();
         scoreManager = FindObjectOfType<ScoreManager>();
@@ -117,8 +122,10 @@ public class UserInput : MonoBehaviour
         if (selectedCard)
         {
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
+            p1CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
+            p1PlayedCards.Add(selectedCard);
+            game.playerHand.Remove(selectedCard.name);
         }
-        p1CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
         selectedCard = null;
     }
 
@@ -132,8 +139,10 @@ public class UserInput : MonoBehaviour
         if (selectedCard)
         {
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
+            p2CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
+            p2PlayedCards.Add(selectedCard);
+            game.computerHand.Remove(selectedCard.name);
         }
-        p2CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
         selectedCard = null;
     }
 
@@ -212,5 +221,18 @@ public class UserInput : MonoBehaviour
         {
             print("It's a tie!");
         }
+
+        
+        foreach (GameObject card in p1PlayedCards)
+        {
+            card.transform.position = new Vector3(game.playerDeckPos.transform.position.x, game.playerDeckPos.transform.position.y, game.playerDeckPos.transform.position.z);
+        }
+        foreach (GameObject card in p2PlayedCards)
+        {
+            card.transform.position = new Vector3(game.computerDeckPos.transform.position.x, game.computerDeckPos.transform.position.y, game.computerDeckPos.transform.position.z);
+        }
+
+
+        game.StartOfTurn();
     }
 }

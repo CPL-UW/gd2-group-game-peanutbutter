@@ -32,6 +32,14 @@ public class ScoreManager : MonoBehaviour
         
     }
 
+    public void ResetScore()
+    {
+        p1Score = 0;
+        p2Score = 0;
+        p1ScoreText.text = "Score: " + p1Score.ToString();
+        p2ScoreText.text = "Score: " + p2Score.ToString();
+    }
+
     public void UpdateP1Score()
     {
         p1Score++;
