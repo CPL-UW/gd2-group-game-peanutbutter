@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: b73d29a2b70b7d44994e7f4a2aab0c1e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9651f86dabae44ab0fd69fe03ae05b
+      internalID: 2043956490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3454741c3ae7040b5e96f4de6e1c76
+      internalID: 1166577888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273ab6d44cfbcae46b63a54fa39d80d7
+      internalID: -1203382726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fd6d030f183c348aede6e080b938e1
+      internalID: 2033631983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065f134759a479044845b3c462e35673
+      internalID: -1735505449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1547b71b570fd4b8d4aa376a2c2196
+      internalID: 417969996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774d81b4d4f38e34cb5384172e93af69
+      internalID: 297651944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafb22107e59a33438bf075528b6dbf2
+      internalID: -1201230765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809d005ed036c34bb8853ed47b41fc3
+      internalID: -1736462588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2523eb77746de4bb1985c5649c4c92
+      internalID: -522320924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506d08efdc2afe8419ca63e9eb6f0e54
+      internalID: 172808087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a2e7d41ec43ed4ea5f7b5e6e512453
+      internalID: -540782366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32a0a2a6a7a065449dfc79457404c32
+      internalID: -639622988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e61f31eed0b0e40bc4f841460aa577
+      internalID: 1076955212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdef80d46c3de7246b21b39754d772cc
+      internalID: -1568667950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef9d5f610f50694cb6e31300f60b2d4
+      internalID: 411628805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7a6ef52325a0e45b2159cdeadabde3
+      internalID: -1174338012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a8e890733eb24409a5714d7cc75176
+      internalID: -1188483254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9358419533fa81499786dc38fa5b2cd
+      internalID: 1661789683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65d725118b98194a92c7f07cb5c9ca5
+      internalID: -2075276170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca87d595c0646d43be35e04ccbfa33d
+      internalID: 1468015934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e60365a4ad4f21459b6b87d3b32f35f
+      internalID: 2008002707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f87c1f622b2d3444b1fe3815954ba18
+      internalID: -1537178469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7813bd87cc157841b651285d4d7778b
+      internalID: 1209447388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543cb224e742c5a469f837ecededed46
+      internalID: 1460165503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7498cd41f724a9044b113ff029797d8a
+      internalID: -253072718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c8117cc7a769548bb250aacc31751a
+      internalID: 1016069354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e54088a92ca3a47959078afc3bc7b5
+      internalID: -960384822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111deadf170ceaa40a50cd5d5e91b874
+      internalID: -403854839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ece186ccf535c41b862b4cff0a9934
+      internalID: -1019111291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d35648513102941b98282885e79395
+      internalID: 985092747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8758725e7fd71864dbe01463625f1a16
+      internalID: -193932896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd5c9703e3684c4eb4b97617279e761
+      internalID: -1225860497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e893e1c437ab84db0a631683844026
+      internalID: -511611377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ccf7e2450078b4d9dac4a577a56608
+      internalID: -2133740588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abec416a1c1846948ac4171992f114bf
+      internalID: -1446288742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04d3585049d84741a17499d3156a2d4
+      internalID: -1918791488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6905b1f135a040641b33fd368e66aaeb
+      internalID: 783403664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8417ca36cf4f8684283ac47a74343eac
+      internalID: 1089567561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29de54510180484bb0ad810b3eff6c4
+      internalID: 34079606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bcabc7f03df514597b2e75173f17cb
+      internalID: -988077697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03c5abac05e57e43a2c38d64c755228
+      internalID: -1643572267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82ce15cf4d6ca34682ac48c47f3fc3d
+      internalID: 785997961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd48faacdc4fe04aa7d9d0dc9851778
+      internalID: -2129036798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b23182decaea843b8c36c96558aed7
+      internalID: -1505948025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf5b19de218eac47a607bdaa986a637
+      internalID: 1290527531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f891b3c20681b4ea6252e9036acb68
+      internalID: 421439110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d44786a6362cd4fa74563c096bf816
+      internalID: 383340627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13c4517eef831e45941b497703bbb35
+      internalID: -1190280510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f90e97aa70dcd478719926d3595916
+      internalID: 179058247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf64f12aa89c4fe41b16aefb99d5b74c
+      internalID: -1129246055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e5c46361ddf2244a4715cedf0c69e2
+      internalID: -68069053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61e8ede79638b14eb2f07dd1a9a63a6
+      internalID: 208806332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5a8eadd1ace9240bd42a71c86b012c
+      internalID: 1069475194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebf33e863f2ab84f952815c4b8732f6
+      internalID: -1188212044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4d2548bd56a28448211273b3f3259e
+      internalID: -180891154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6673385302672c741bfb0d9e003b1024
+      internalID: 989726427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fb484e5bbd0c644a66a90f917af5c4
+      internalID: 977948075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37749e61ad8f345419e504d492883dae
+      internalID: -2018988047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337d0d55e05a441448d21dceb0ccb61b
+      internalID: -1726438202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c2c254277846a4bbb9a30b2f699a87
+      internalID: 2076512658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0c999e677d0894bbb7d27e4848a59e
+      internalID: 1151025548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecb8833d891fe45ba85e24a8e744b4
+      internalID: 267208289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5863a850c7af3643913524af2f5d04d
+      internalID: 506413974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf51dcaea4f346448f5365bbd3fa20f
+      internalID: 168783027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9133b24a4cbb974e8cb7762d4632be2
+      internalID: 966929928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5a4c43cd3c6a0418134e0db27a7934
+      internalID: -1743871364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b759926d8a738a40b05acf32bb27f64
+      internalID: 1433364030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1924c0ce835a7d84bad545ba96c68675
+      internalID: 566585707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Event Horizon Card Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e71638cd3b3a7b44a361d6ede9e2509
+      internalID: -498961008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dragon Deck Event Horizon Card Sheet_21: 2008002707
+      Dragon Deck Event Horizon Card Sheet_51: -68069053
+      Dragon Deck Event Horizon Card Sheet_55: -180891154
+      Dragon Deck Event Horizon Card Sheet_54: -1188212044
+      Dragon Deck Event Horizon Card Sheet_44: -1505948025
+      Dragon Deck Event Horizon Card Sheet_68: 566585707
+      Dragon Deck Event Horizon Card Sheet_19: -2075276170
+      Dragon Deck Event Horizon Card Sheet_20: 1468015934
+      Dragon Deck Event Horizon Card Sheet_46: 421439110
+      Dragon Deck Event Horizon Card Sheet_39: 34079606
+      Dragon Deck Event Horizon Card Sheet_41: -1643572267
+      Dragon Deck Event Horizon Card Sheet_10: 172808087
+      Dragon Deck Event Horizon Card Sheet_36: -1918791488
+      Dragon Deck Event Horizon Card Sheet_56: 989726427
+      Dragon Deck Event Horizon Card Sheet_40: -988077697
+      Dragon Deck Event Horizon Card Sheet_62: 267208289
+      Dragon Deck Event Horizon Card Sheet_28: -403854839
+      Dragon Deck Event Horizon Card Sheet_67: 1433364030
+      Dragon Deck Event Horizon Card Sheet_33: -511611377
+      Dragon Deck Event Horizon Card Sheet_0: 2043956490
+      Dragon Deck Event Horizon Card Sheet_60: 2076512658
+      Dragon Deck Event Horizon Card Sheet_59: -1726438202
+      Dragon Deck Event Horizon Card Sheet_15: 411628805
+      Dragon Deck Event Horizon Card Sheet_30: 985092747
+      Dragon Deck Event Horizon Card Sheet_6: 297651944
+      Dragon Deck Event Horizon Card Sheet_27: -960384822
+      Dragon Deck Event Horizon Card Sheet_47: 383340627
+      Dragon Deck Event Horizon Card Sheet_63: 506413974
+      Dragon Deck Event Horizon Card Sheet_66: -1743871364
+      Dragon Deck Event Horizon Card Sheet_58: -2018988047
+      Dragon Deck Event Horizon Card Sheet_3: 2033631983
+      Dragon Deck Event Horizon Card Sheet_8: -1736462588
+      Dragon Deck Event Horizon Card Sheet_31: -193932896
+      Dragon Deck Event Horizon Card Sheet_4: -1735505449
+      Dragon Deck Event Horizon Card Sheet_13: 1076955212
+      Dragon Deck Event Horizon Card Sheet_57: 977948075
+      Dragon Deck Event Horizon Card Sheet_38: 1089567561
+      Dragon Deck Event Horizon Card Sheet_53: 1069475194
+      Dragon Deck Event Horizon Card Sheet_64: 168783027
+      Dragon Deck Event Horizon Card Sheet_14: -1568667950
+      Dragon Deck Event Horizon Card Sheet_9: -522320924
+      Dragon Deck Event Horizon Card Sheet_12: -639622988
+      Dragon Deck Event Horizon Card Sheet_1: 1166577888
+      Dragon Deck Event Horizon Card Sheet_25: -253072718
+      Dragon Deck Event Horizon Card Sheet_17: -1188483254
+      Dragon Deck Event Horizon Card Sheet_5: 417969996
+      Dragon Deck Event Horizon Card Sheet_42: 785997961
+      Dragon Deck Event Horizon Card Sheet_65: 966929928
+      Dragon Deck Event Horizon Card Sheet_2: -1203382726
+      Dragon Deck Event Horizon Card Sheet_35: -1446288742
+      Dragon Deck Event Horizon Card Sheet_34: -2133740588
+      Dragon Deck Event Horizon Card Sheet_23: 1209447388
+      Dragon Deck Event Horizon Card Sheet_49: 179058247
+      Dragon Deck Event Horizon Card Sheet_43: -2129036798
+      Dragon Deck Event Horizon Card Sheet_32: -1225860497
+      Dragon Deck Event Horizon Card Sheet_29: -1019111291
+      Dragon Deck Event Horizon Card Sheet_24: 1460165503
+      Dragon Deck Event Horizon Card Sheet_37: 783403664
+      Dragon Deck Event Horizon Card Sheet_48: -1190280510
+      Dragon Deck Event Horizon Card Sheet_7: -1201230765
+      Dragon Deck Event Horizon Card Sheet_50: -1129246055
+      Dragon Deck Event Horizon Card Sheet_18: 1661789683
+      Dragon Deck Event Horizon Card Sheet_45: 1290527531
+      Dragon Deck Event Horizon Card Sheet_16: -1174338012
+      Dragon Deck Event Horizon Card Sheet_61: 1151025548
+      Dragon Deck Event Horizon Card Sheet_11: -540782366
+      Dragon Deck Event Horizon Card Sheet_52: 208806332
+      Dragon Deck Event Horizon Card Sheet_69: -498961008
+      Dragon Deck Event Horizon Card Sheet_26: 1016069354
+      Dragon Deck Event Horizon Card Sheet_22: -1537178469
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

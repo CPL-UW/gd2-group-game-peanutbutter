@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: 8ca29560ec799534496f6f1b0f3297e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242aebaf8f0cb4a4b9cd9d048680202e
+      internalID: 635690181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8f8852fdb37d24ea314723bc65b37d
+      internalID: 1363578034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05b9e5f0c2e99542a3677c790a0faf3
+      internalID: -2038961755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff1e453da36ebd47a48bb7a621a5f0b
+      internalID: 1820086254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b9e2a9977bb334f9040b0238235df1
+      internalID: 398537855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b434b87c88dcf41a6e73514b5bfa56
+      internalID: 355767370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_6
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0b5e8a3b5a4e74b870f9bd288bf7f3
+      internalID: -1486092670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78d9e03e05192c45a3d993255529594
+      internalID: -1630112733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_8
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0080fa22c2f0aa4fb09deb8716168ab
+      internalID: -1417190136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_9
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 3511
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e22a9b9ab48aa47aef93f3d592860f
+      internalID: 1617755056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0cecf7364a8e6448e0c5b4108e427b
+      internalID: -1471883362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3412e50548ac1b6499c507eec3e215c3
+      internalID: 1335360442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c663df09e9cd20f409ebc25f03b1f6cf
+      internalID: 2055461074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc477a9fe65bf1147bed84a903612261
+      internalID: 1006415970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b29e4201665e164fbb2043998fdf178
+      internalID: 269393967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_15
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9bcc6b10c88804b9af1d47369e1ba0
+      internalID: 866634467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_16
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57790053ff3723a47b3e78d60aa27c19
+      internalID: -2052255059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_17
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756af272b7a08024ab83090434718f27
+      internalID: -1906322271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_18
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a650dfb2644e2a248a5311b692f0b68e
+      internalID: -943787419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_19
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2926
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f58783a1c19c034b9debaeb185a3f9a
+      internalID: 1726871534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1c669f9ce12a34da2dfd5c82a4afe1
+      internalID: 1395054277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c724ede750b2443829220ce31c48ae
+      internalID: 1174158787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9767c693255e9fa4fa91acbdd4e3b38e
+      internalID: 12432921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026ecebc21cd57b43b94746e992fbce3
+      internalID: -295789956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb408c4e93948a4e9dd47a052dc6371
+      internalID: -144435960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_25
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6a73b3684ba104c9c20df14b2f20d6
+      internalID: -589514140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_26
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955b80880bb1ed44489207d8240505ae
+      internalID: 528646003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_27
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47053dae99f2d4693f5064a532e9b0
+      internalID: 452876920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_28
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e2843f514c7974896d9fe049ad43f1
+      internalID: 90992133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_29
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2341
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f3fd8db71baf14eb594785343c6252
+      internalID: 1747541062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eb699aa4f8e714889b4969dc30add0
+      internalID: -2067582740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c142d72b840bc474b84d23fb6c3ac469
+      internalID: 1524861589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8cb76755fbde546a92420242f0b176
+      internalID: -1279412954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095fc7ad31c23594393c17e8f1babe28
+      internalID: -697022213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974b107f5ef09db4d9e08d0ffd4b72c7
+      internalID: -1596515482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_35
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8484a38fa9fadda42982a8eaf87109b6
+      internalID: 1585240503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_36
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890ab2e599cb54d48ae23cbe8ac893aa
+      internalID: 1237832425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_37
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dac2d4118a1814bb77d2ca747067f2
+      internalID: 557256247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_38
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05415ff5996cda249b0fb3a091e0882f
+      internalID: -344676283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_39
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1756
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f9e9721df5e3147a4d069d13158bf2
+      internalID: -1533671089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38df298e805c6c243b3a2f8cbc6508cf
+      internalID: 1572162779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251073460f00afc4da8f757316fc2ea7
+      internalID: 1501202770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f6c0e19385e9c459fe526c89edda9a
+      internalID: -1120791132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e434b69749045894b86f4c7cc6f03afa
+      internalID: 1219908689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b071a12b9b1961545998a915b8102f0d
+      internalID: 677538468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_45
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06aa6fc8c4825eb4fbdb505c0655e248
+      internalID: -386754361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_46
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79f78111a104ce4e89924e0a75a5c60
+      internalID: 249845227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_47
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c62c43d8e981240a4e58a385faa4f0
+      internalID: -186252182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_48
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b400597ab02f05347a933e417e088c97
+      internalID: 1756659152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_49
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1171
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8bd95f778af2b4da0439ee4f2f5c7d
+      internalID: -20577140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d761ac2dd170448a57b758a2f2c653
+      internalID: 1084895607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef874568cc39d1f4d9f10d18e5128069
+      internalID: -1023619731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92bb82402a40694ca2cbb2fc685c25b
+      internalID: 775080255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4566b7140a89a4fa016f342b1d723f
+      internalID: 1291366646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37a0175baaf2c34ca074f638ad61107
+      internalID: -1906868375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_55
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75518e1601b9de047812f9ac9eb88400
+      internalID: -1360259407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_56
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29a83624d7056b42b91ecb6209e49e7
+      internalID: -647951778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_57
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afefcca81a9afdd4a9f2586c294555fe
+      internalID: -1921389285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_58
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c4e04732e250b4ab2cc17d51299340
+      internalID: 1778892981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_59
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 586
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8f06a2d9d567e42bab5a2356167c19
+      internalID: -848531901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fb35df7f6f93f41be7067108ab681a
+      internalID: -1373481971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c4c66320a500d41a4d610d9488b804
+      internalID: 1169519677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_62
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e57c06432169364da9d4c1c6d0412ac
+      internalID: -897757879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_63
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f5e5e450d048a47be46b29c5a6c9a0
+      internalID: 959857760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58348557c95b3c5459dc53d784457bd3
+      internalID: -931203212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_65
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae2aeef8792c8e4dad7243ba444110e
+      internalID: 144507782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_66
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60caecdfa16b877489c7139f4bc6be85
+      internalID: -1121232232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_67
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011e2aaddf4e79b43ae6db53f280ef7e
+      internalID: 1091655757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_68
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff015dd64826fbd4185f5d464af41bf5
+      internalID: 988970150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magician's Deck Event Horizon_69
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1
+        width: 409
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6878763d75f7f8245b4f3bc4c4ce718c
+      internalID: 1982519932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Magician's Deck Event Horizon_69: 1982519932
+      Magician's Deck Event Horizon_2: -2038961755
+      Magician's Deck Event Horizon_64: -931203212
+      Magician's Deck Event Horizon_7: -1630112733
+      Magician's Deck Event Horizon_14: 269393967
+      Magician's Deck Event Horizon_20: 1395054277
+      Magician's Deck Event Horizon_46: 249845227
+      Magician's Deck Event Horizon_65: 144507782
+      Magician's Deck Event Horizon_67: 1091655757
+      Magician's Deck Event Horizon_1: 1363578034
+      Magician's Deck Event Horizon_13: 1006415970
+      Magician's Deck Event Horizon_48: 1756659152
+      Magician's Deck Event Horizon_41: 1501202770
+      Magician's Deck Event Horizon_11: 1335360442
+      Magician's Deck Event Horizon_60: -1373481971
+      Magician's Deck Event Horizon_68: 988970150
+      Magician's Deck Event Horizon_40: 1572162779
+      Magician's Deck Event Horizon_23: -295789956
+      Magician's Deck Event Horizon_32: -1279412954
+      Magician's Deck Event Horizon_33: -697022213
+      Magician's Deck Event Horizon_43: 1219908689
+      Magician's Deck Event Horizon_17: -1906322271
+      Magician's Deck Event Horizon_3: 1820086254
+      Magician's Deck Event Horizon_53: 1291366646
+      Magician's Deck Event Horizon_62: -897757879
+      Magician's Deck Event Horizon_19: 1726871534
+      Magician's Deck Event Horizon_22: 12432921
+      Magician's Deck Event Horizon_25: -589514140
+      Magician's Deck Event Horizon_58: 1778892981
+      Magician's Deck Event Horizon_4: 398537855
+      Magician's Deck Event Horizon_38: -344676283
+      Magician's Deck Event Horizon_59: -848531901
+      Magician's Deck Event Horizon_16: -2052255059
+      Magician's Deck Event Horizon_0: 635690181
+      Magician's Deck Event Horizon_51: -1023619731
+      Magician's Deck Event Horizon_63: 959857760
+      Magician's Deck Event Horizon_34: -1596515482
+      Magician's Deck Event Horizon_31: 1524861589
+      Magician's Deck Event Horizon_18: -943787419
+      Magician's Deck Event Horizon_56: -647951778
+      Magician's Deck Event Horizon_47: -186252182
+      Magician's Deck Event Horizon_54: -1906868375
+      Magician's Deck Event Horizon_21: 1174158787
+      Magician's Deck Event Horizon_55: -1360259407
+      Magician's Deck Event Horizon_9: 1617755056
+      Magician's Deck Event Horizon_5: 355767370
+      Magician's Deck Event Horizon_6: -1486092670
+      Magician's Deck Event Horizon_27: 452876920
+      Magician's Deck Event Horizon_24: -144435960
+      Magician's Deck Event Horizon_61: 1169519677
+      Magician's Deck Event Horizon_66: -1121232232
+      Magician's Deck Event Horizon_28: 90992133
+      Magician's Deck Event Horizon_8: -1417190136
+      Magician's Deck Event Horizon_10: -1471883362
+      Magician's Deck Event Horizon_26: 528646003
+      Magician's Deck Event Horizon_29: 1747541062
+      Magician's Deck Event Horizon_39: -1533671089
+      Magician's Deck Event Horizon_52: 775080255
+      Magician's Deck Event Horizon_36: 1237832425
+      Magician's Deck Event Horizon_42: -1120791132
+      Magician's Deck Event Horizon_57: -1921389285
+      Magician's Deck Event Horizon_49: -20577140
+      Magician's Deck Event Horizon_37: 557256247
+      Magician's Deck Event Horizon_50: 1084895607
+      Magician's Deck Event Horizon_44: 677538468
+      Magician's Deck Event Horizon_15: 866634467
+      Magician's Deck Event Horizon_45: -386754361
+      Magician's Deck Event Horizon_35: 1585240503
+      Magician's Deck Event Horizon_30: -2067582740
+      Magician's Deck Event Horizon_12: 2055461074
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
