@@ -7,7 +7,6 @@ public class ToggleCamera : MonoBehaviour
     public GameObject p1Camera;
     public GameObject p2Camera;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +16,7 @@ public class ToggleCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ToggleP1Camera();
@@ -26,7 +26,7 @@ public class ToggleCamera : MonoBehaviour
         {
             ToggleP2Camera();
         }
-
+        
     }
 
     public void ToggleP1Camera()

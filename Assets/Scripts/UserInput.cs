@@ -131,7 +131,7 @@ public class UserInput : MonoBehaviour
 
     void PlayerCard(GameObject selected)
     {
-        if ( game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1) )
+        if ( (game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1)) || game.playerDeck.Contains(selected.name) )
         {
             // Do nothing
         }
@@ -155,7 +155,7 @@ public class UserInput : MonoBehaviour
 
     void ComputerCard(GameObject selected)
     {
-        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1))
+        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1) && game.computerDeck.Contains(selected.name))
         {
             // Do nothing
         }
@@ -167,6 +167,7 @@ public class UserInput : MonoBehaviour
 
     public void ChangeTurn()
     {
+        selectedCard = null;
         if (isP1Turn)
         {
             toggleCamera.ToggleP2Camera();
@@ -177,7 +178,6 @@ public class UserInput : MonoBehaviour
             EndTurn();
         }
         isP1Turn = !isP1Turn;
-        selectedCard = null;
     }
     
     public void EndTurn()
