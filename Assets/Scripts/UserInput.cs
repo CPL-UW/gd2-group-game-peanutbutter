@@ -131,7 +131,14 @@ public class UserInput : MonoBehaviour
 
     void PlayerCard(GameObject selected)
     {
-        selectedCard = selected;
+        if ( game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1) )
+        {
+            // Do nothing
+        }
+        else
+        {
+            selectedCard = selected;
+        }
     }
     
     void P2Combat(GameObject selected, int row, int col)
@@ -148,7 +155,14 @@ public class UserInput : MonoBehaviour
 
     void ComputerCard(GameObject selected)
     {
-        selectedCard = selected;
+        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1))
+        {
+            // Do nothing
+        }
+        else
+        {
+            selectedCard = selected;
+        }
     }
 
     public void ChangeTurn()
@@ -232,7 +246,7 @@ public class UserInput : MonoBehaviour
             card.transform.position = new Vector3(game.computerDeckPos.transform.position.x, game.computerDeckPos.transform.position.y, game.computerDeckPos.transform.position.z);
         }
 
-
+        selectedCard = null;
         game.StartOfTurn();
     }
 }

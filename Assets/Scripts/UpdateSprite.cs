@@ -10,7 +10,6 @@ public class UpdateSprite : MonoBehaviour
     private Selectable selectable;
     private Game game;
     private UserInput userInput;
-    private Color c;
     private ToggleCamera toggleCamera;
     
     // Start is called before the first frame update
@@ -45,7 +44,6 @@ public class UpdateSprite : MonoBehaviour
         }
         spriteRenderer = GetComponent<SpriteRenderer>();
         selectable = GetComponent<Selectable>();
-        c = spriteRenderer.color;
         toggleCamera = GetComponent<ToggleCamera>();
     }
 
@@ -68,9 +66,12 @@ public class UpdateSprite : MonoBehaviour
             }
             else
             {
-                spriteRenderer.color = c;
+                spriteRenderer.color = Color.white;
             }
         }
-        
+        else
+        {
+            spriteRenderer.color = Color.white;
+        }
     }
 }
