@@ -26,7 +26,8 @@ public class UpdateSprite : MonoBehaviour
         {
             if (this.name == card)
             {
-                cardFace = game.cardFaces[i];
+                transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                cardFace = game.p1CardFaces[i];
                 break;
             }
             i++;
@@ -36,7 +37,8 @@ public class UpdateSprite : MonoBehaviour
         {
             if (this.name == card)
             {
-                cardFace = game.cardFaces[i];
+                transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                cardFace = game.p2CardFaces[i];
                 break;
             }
             i++;

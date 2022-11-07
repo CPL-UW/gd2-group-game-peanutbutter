@@ -5,7 +5,8 @@ using System.Linq;
 
 public class Game : MonoBehaviour
 {
-    public Sprite[] cardFaces;
+    public Sprite[] p1CardFaces;
+    public Sprite[] p2CardFaces;
     public GameObject playerCardPrefab;
     public GameObject computerCardPrefab;
     public GameObject playerDeckPos;
@@ -61,17 +62,19 @@ public class Game : MonoBehaviour
     public void StartOfTurn()
     {
         GameSort(playerDeck, playerHand);
-        Deal(playerDeck, playerDeckPos, playerCardPrefab, playerHand, playerHandPos);
+        Deal(playerDeck, playerDeckPos, playerCardPrefab, playerHand, playerHandPos, Quaternion.identity);
         GameSort(computerDeck, computerHand);
-        Deal(computerDeck, computerDeckPos, computerCardPrefab, computerHand, computerHandPos);
+        Deal(computerDeck, computerDeckPos, computerCardPrefab, computerHand, computerHandPos, Quaternion.Euler(new Vector3(0,0,180)));
     }
 
-    public static List<string> GenerateDeck(bool isPlayer1 = true)
+    public static List<string> GenerateDeck(bool isP1 = true)
     {
         List<string> newDeck = new List<string>();
+        
+        // Add standard cards to each deck
         foreach (string s in suits)
         {
-            if (isPlayer1)
+            if (isP1)
             {
                 foreach (string v in values)
                 {
@@ -87,6 +90,9 @@ public class Game : MonoBehaviour
             }
             
         }
+
+        // Add jokers to each deck
+
         return newDeck;
     }
 
@@ -104,7 +110,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    void Deal(List<string> deck, GameObject deckPos, GameObject cardPrefab, List<string> hand, GameObject handPos)
+    void Deal(List<string> deck, GameObject deckPos, GameObject cardPrefab, List<string> hand, GameObject handPos, Quaternion rotation)
     {
         float zOffset = 0.03f;
         foreach (string card in deck)
@@ -112,7 +118,7 @@ public class Game : MonoBehaviour
             GameObject newCard = Instantiate(
                                         cardPrefab,
                                         new Vector3(deckPos.transform.position.x, deckPos.transform.position.y, deckPos.transform.position.z - zOffset),
-                                        Quaternion.identity,
+                                        rotation,
                                         deckPos.transform
                                   );
             newCard.name = card;
@@ -125,12 +131,12 @@ public class Game : MonoBehaviour
             GameObject newCard = Instantiate(
                                         cardPrefab,
                                         new Vector3(handPos.transform.position.x - xOffset, handPos.transform.position.y, handPos.transform.position.z),
-                                        Quaternion.identity,
+                                        rotation,
                                         handPos.transform
                                   );
             newCard.name = card;
             newCard.GetComponent<Selectable>().faceUp = true;
-            xOffset += 1.15f;
+            xOffset += 1.35f;
         }
     }
 
