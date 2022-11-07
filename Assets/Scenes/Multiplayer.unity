@@ -1015,7 +1015,6 @@ GameObject:
   - component: {fileID: 265668436}
   - component: {fileID: 265668435}
   - component: {fileID: 265668434}
-  - component: {fileID: 265668433}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1044,19 +1043,6 @@ RectTransform:
   m_AnchoredPosition: {x: -8.72, y: -3.15}
   m_SizeDelta: {x: 114.06, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &265668433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265668431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f79a48af5fb5d0f42951c241848e3db1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedCard: {fileID: 0}
 --- !u!114 &265668434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,7 +1087,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 265668433}
+      - m_Target: {fileID: 1694894069}
         m_TargetAssemblyTypeName: UserInput, Assembly-CSharp
         m_MethodName: ChangeTurn
         m_Mode: 1
@@ -5916,7 +5902,6 @@ GameObject:
   - component: {fileID: 1543772645}
   - component: {fileID: 1543772644}
   - component: {fileID: 1543772643}
-  - component: {fileID: 1543772646}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5989,7 +5974,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1543772646}
+      - m_Target: {fileID: 1694894069}
         m_TargetAssemblyTypeName: UserInput, Assembly-CSharp
         m_MethodName: ChangeTurn
         m_Mode: 1
@@ -6039,19 +6024,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543772641}
   m_CullTransparentMesh: 1
---- !u!114 &1543772646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543772641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f79a48af5fb5d0f42951c241848e3db1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedCard: {fileID: 0}
 --- !u!1 &1557694178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,6 +6711,8 @@ MonoBehaviour:
   computerDeck: []
   playerHand: []
   computerHand: []
+  p1HandCards: []
+  p2HandCards: []
 --- !u!4 &1694894071
 Transform:
   m_ObjectHideFlags: 0

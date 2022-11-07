@@ -25,11 +25,17 @@ public class Game : MonoBehaviour
     public List<string> playerHand;
     public List<string> computerHand;
 
+    public List<GameObject> p1HandCards;
+    public List<GameObject> p2HandCards;
+
     public const int handSize = 6;
 
     // Start is called before the first frame update
     void Start()
     {
+        p1HandCards = new List<GameObject>();
+        p2HandCards = new List<GameObject>();
+
         scoreManager = FindObjectOfType<ScoreManager>();
         PlayCards();
     }
@@ -63,8 +69,8 @@ public class Game : MonoBehaviour
     {
         GameSort(playerDeck, playerHand);
         Deal(playerDeck, playerDeckPos, playerCardPrefab, playerHand, playerHandPos, Quaternion.identity);
-        GameSort(computerDeck, computerHand);
-        Deal(computerDeck, computerDeckPos, computerCardPrefab, computerHand, computerHandPos, Quaternion.Euler(new Vector3(0,0,180)));
+        GameSort(computerDeck, computerHand, false);
+        Deal(computerDeck, computerDeckPos, computerCardPrefab, computerHand, computerHandPos, Quaternion.Euler(new Vector3(0,0,180)), false);
     }
 
     public static List<string> GenerateDeck(bool isP1 = true)
@@ -120,7 +126,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    void Deal(List<string> deck, GameObject deckPos, GameObject cardPrefab, List<string> hand, GameObject handPos, Quaternion rotation)
+    void Deal(List<string> deck, GameObject deckPos, GameObject cardPrefab, List<string> hand, GameObject handPos, Quaternion rotation, bool isP1 = true)
     {
         float zOffset = 0.03f;
         foreach (string card in deck)
@@ -140,17 +146,25 @@ public class Game : MonoBehaviour
         {
             GameObject newCard = Instantiate(
                                         cardPrefab,
-                                        new Vector3(handPos.transform.position.x - xOffset, handPos.transform.position.y, handPos.transform.position.z),
+                                        new Vector3(handPos.transform.position.x - xOffset, handPos.transform.position.y, handPos.transform.position.z - zOffset),
                                         rotation,
                                         handPos.transform
                                   );
             newCard.name = card;
             newCard.GetComponent<Selectable>().faceUp = true;
+            if (isP1)
+            {
+                p1HandCards.Add(newCard);
+            }
+            else
+            {
+                p2HandCards.Add(newCard);
+            }
             xOffset += 1.35f;
         }
     }
 
-    void GameSort(List<string> deck, List<string> hand)
+    void GameSort(List<string> deck, List<string> hand, bool isP1 = true)
     {
         for (int i = hand.Count; i < handSize; i++)
         {

@@ -14,17 +14,27 @@ public class UserInput : MonoBehaviour
     private List<GameObject> p2PlayedCards;
 
     public static bool isP1Turn = true;
-    private int[,] p1CombatPos = new int[2,3];
-    private int[,] p2CombatPos = new int[2,3];
+    private GameObject[,] p1CombatPos;
+    private GameObject[,] p2CombatPos;
+
+    private List<Vector3> p1Prev;
+    private List<Vector3> p2Prev;
 
     // Start is called before the first frame update
     void Start()
     {
+        p1CombatPos = new GameObject[2, 3];
+        p2CombatPos = new GameObject[2, 3];
+
         p1PlayedCards = new List<GameObject>();
         p2PlayedCards = new List<GameObject>();
+
         game = FindObjectOfType<Game>();
         toggleCamera = FindObjectOfType<ToggleCamera>();
         scoreManager = FindObjectOfType<ScoreManager>();
+
+        p1Prev = new List<Vector3>();
+        p2Prev = new List<Vector3>();
     }
 
     // Update is called once per frame
@@ -121,19 +131,46 @@ public class UserInput : MonoBehaviour
     {
         if (selectedCard)
         {
+            if (game.playerHand.Contains(selectedCard.name))
+            {
+                p1Prev.Add(selectedCard.transform.position);
+            }
+            
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
-            p1CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
+            p1CombatPos[row, col] = selectedCard;
             p1PlayedCards.Add(selectedCard);
             game.playerHand.Remove(selectedCard.name);
+            game.p1HandCards.Remove(selectedCard);
         }
         selectedCard = null;
     }
 
     void PlayerCard(GameObject selected)
     {
-        if ( (game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1)) || game.playerDeck.Contains(selected.name) )
+        // Check rules for not selecting card
+        if ((game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1)) || game.playerDeck.Contains(selected.name))
         {
             // Do nothing
+        }
+        // Remove card from combat arena
+        else if ( selectedCard && (selected.name == selectedCard.name) && p1PlayedCards.Contains(selectedCard) )
+        {
+            selectedCard.transform.position = p1Prev.ElementAt<Vector3>(0);
+            p1Prev.RemoveAt(0);
+            p1PlayedCards.Remove(selectedCard);
+            game.playerHand.Add(selectedCard.name);
+            game.p1HandCards.Add(selectedCard);
+            for (int i = 0; i < p1CombatPos.GetLength(0); i++)
+            {
+                for (int j = 0; j < p1CombatPos.GetLength(1); j++)
+                {
+                    if ( p1CombatPos[i,j] && (selectedCard.name == p1CombatPos[i, j].name) )
+                    {
+                        p1CombatPos[i, j] = null;
+                    }
+                }
+            }
+            selectedCard = null;
         }
         else
         {
@@ -145,19 +182,46 @@ public class UserInput : MonoBehaviour
     {
         if (selectedCard)
         {
+            if (game.computerHand.Contains(selectedCard.name))
+            {
+                p2Prev.Add(selectedCard.transform.position);
+            }
+
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
-            p2CombatPos[row, col] = selectedCard.GetComponent<Selectable>().value;
+            p2CombatPos[row, col] = selectedCard;
             p2PlayedCards.Add(selectedCard);
             game.computerHand.Remove(selectedCard.name);
+            game.p2HandCards.Remove(selectedCard);
         }
         selectedCard = null;
     }
 
     void ComputerCard(GameObject selected)
     {
-        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1) && game.computerDeck.Contains(selected.name))
+        // Check rules for not selecting card
+        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1) || game.computerDeck.Contains(selected.name))
         {
             // Do nothing
+        }
+        // Remove card from combat arena
+        else if (selectedCard && (selected.name == selectedCard.name) && p2PlayedCards.Contains(selectedCard))
+        {
+            selectedCard.transform.position = p2Prev.ElementAt<Vector3>(0);
+            p2Prev.RemoveAt(0);
+            p2PlayedCards.Remove(selectedCard);
+            game.computerHand.Add(selectedCard.name);
+            game.p2HandCards.Add(selectedCard);
+            for (int i = 0; i < p2CombatPos.GetLength(0); i++)
+            {
+                for (int j = 0; j < p2CombatPos.GetLength(1); j++)
+                {
+                    if (p2CombatPos[i, j] && (selectedCard.name == p2CombatPos[i, j].name))
+                    {
+                        p2CombatPos[i, j] = null;
+                    }
+                }
+            }
+            selectedCard = null;
         }
         else
         {
@@ -186,13 +250,13 @@ public class UserInput : MonoBehaviour
         int p2ColWins = 0;
 
         // Calculate who wins round
-        int p1LefCol = p1CombatPos[0, 0] + p1CombatPos[1, 0];
-        int p1CenCol = p1CombatPos[0, 1] + p1CombatPos[1, 1];
-        int p1RigCol = p1CombatPos[0, 2] + p1CombatPos[1, 2];
+        int p1LefCol = GetValue(p1CombatPos[0, 0]) + GetValue(p1CombatPos[1, 0]);
+        int p1CenCol = GetValue(p1CombatPos[0, 1]) + GetValue(p1CombatPos[1, 1]);
+        int p1RigCol = GetValue(p1CombatPos[0, 2]) + GetValue(p1CombatPos[1, 2]);
 
-        int p2LefCol = p2CombatPos[0, 0] + p2CombatPos[1, 0];
-        int p2CenCol = p2CombatPos[0, 1] + p2CombatPos[1, 1];
-        int p2RigCol = p2CombatPos[0, 2] + p2CombatPos[1, 2];
+        int p2LefCol = GetValue(p2CombatPos[0, 0]) + GetValue(p2CombatPos[1, 0]);
+        int p2CenCol = GetValue(p2CombatPos[0, 1]) + GetValue(p2CombatPos[1, 1]);
+        int p2RigCol = GetValue(p2CombatPos[0, 2]) + GetValue(p2CombatPos[1, 2]);
 
         if (p1LefCol > p2RigCol)
         {
@@ -236,7 +300,6 @@ public class UserInput : MonoBehaviour
             print("It's a tie!");
         }
 
-        
         foreach (GameObject card in p1PlayedCards)
         {
             card.transform.position = new Vector3(game.playerDeckPos.transform.position.x, game.playerDeckPos.transform.position.y, game.playerDeckPos.transform.position.z);
@@ -246,7 +309,37 @@ public class UserInput : MonoBehaviour
             card.transform.position = new Vector3(game.computerDeckPos.transform.position.x, game.computerDeckPos.transform.position.y, game.computerDeckPos.transform.position.z);
         }
 
+        int p1HandCount = game.p1HandCards.Count;
+        for (int i = 0; i < p1HandCount; i++)
+        {
+            GameObject card = game.p1HandCards.ElementAt<GameObject>(0);
+            game.p1HandCards.Remove(card);
+            Destroy(card);
+        }
+        int p2HandCount = game.p2HandCards.Count;
+        for (int i = 0; i < p2HandCount; i++)
+        {
+            GameObject card = game.p2HandCards.ElementAt<GameObject>(0);
+            game.p2HandCards.Remove(card);
+            Destroy(card);
+        }
+
+        p1PlayedCards.Clear();
+        p2PlayedCards.Clear();
+
         selectedCard = null;
         game.StartOfTurn();
+    }
+
+    int GetValue(GameObject card)
+    {
+        if (card)
+        {
+            return card.GetComponent<Selectable>().value;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
