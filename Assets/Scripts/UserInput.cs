@@ -229,11 +229,28 @@ public class UserInput : MonoBehaviour
         }
     }
 
+    public void DiscardCards()
+    {
+        selectedCard = null;
+    }
+
     public void ChangeTurn()
     {
         selectedCard = null;
         if (isP1Turn)
         {
+            foreach (GameObject card in game.p1HandCards)
+            {
+                card.GetComponent<Selectable>().faceUp = false;
+            }
+            foreach (GameObject card in p1PlayedCards)
+            {
+                card.GetComponent<Selectable>().faceUp = false;
+            }
+            foreach (GameObject card in game.p2HandCards)
+            {
+                card.GetComponent<Selectable>().faceUp = true;
+            }
             toggleCamera.ToggleP2Camera();
         }
         else
@@ -302,7 +319,7 @@ public class UserInput : MonoBehaviour
 
         foreach (GameObject card in p1PlayedCards)
         {
-            card.transform.position = new Vector3(game.playerDeckPos.transform.position.x, game.playerDeckPos.transform.position.y, game.playerDeckPos.transform.position.z);
+            card.transform.position = new Vector3(game.playerDeckPos.transform.position.x, game.playerDeckPos.transform.position.y, game.playerDeckPos.transform.position.z+10);
         }
         foreach (GameObject card in p2PlayedCards)
         {

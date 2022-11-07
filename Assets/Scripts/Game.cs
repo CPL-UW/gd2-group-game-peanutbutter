@@ -142,6 +142,7 @@ public class Game : MonoBehaviour
         }
 
         float xOffset = 1.15f;
+        zOffset = 0.03f;
         foreach (string card in hand)
         {
             GameObject newCard = Instantiate(
@@ -151,7 +152,10 @@ public class Game : MonoBehaviour
                                         handPos.transform
                                   );
             newCard.name = card;
-            newCard.GetComponent<Selectable>().faceUp = true;
+            if (isP1)
+            {
+                newCard.GetComponent<Selectable>().faceUp = true;
+            }
             if (isP1)
             {
                 p1HandCards.Add(newCard);
@@ -161,6 +165,7 @@ public class Game : MonoBehaviour
                 p2HandCards.Add(newCard);
             }
             xOffset += 1.35f;
+            zOffset += 0.03f;
         }
     }
 
