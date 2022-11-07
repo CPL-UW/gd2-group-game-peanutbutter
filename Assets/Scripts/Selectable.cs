@@ -76,12 +76,11 @@ public class Selectable : MonoBehaviour
             {
                 value = 13;
             }
-            /* Joker?
-            if (valueString == "A")
+            if (valueString == "O")
             {
-                value = 1;
+                value = 14;
             }
-            */
+            
         }
 
         // Set suit and values of computer cards
@@ -142,12 +141,10 @@ public class Selectable : MonoBehaviour
             {
                 value = 13;
             }
-            /* Joker?
-            if (valueString == "A")
+            if (valueString == "O")
             {
-                value = 1;
+                value = 14;
             }
-            */
         }
     }
 

@@ -92,6 +92,16 @@ public class Game : MonoBehaviour
         }
 
         // Add jokers to each deck
+        if (isP1)
+        {
+            newDeck.Add("RO");
+            newDeck.Add("BO");
+        }
+        else
+        {
+            newDeck.Add("OR");
+            newDeck.Add("OB");
+        }
 
         return newDeck;
     }
