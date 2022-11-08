@@ -14,6 +14,9 @@ public class Game : MonoBehaviour
     public GameObject playerHandPos;
     public GameObject computerHandPos;
 
+    public GameObject p1DiscardPos;
+    public GameObject p2DiscardPos;
+
     public ScoreManager scoreManager;
 
     public static string[] suits = new string[] {"C","D","H","S"};
@@ -45,14 +48,23 @@ public class Game : MonoBehaviour
     {
         if (scoreManager.p1Score >= 7)
         {
-            print("Player 1 Wins!!!");
+            print("Player 1 Wins the Game!!!");
             scoreManager.ResetScore();
+            RestartGame();
         }
         else if (scoreManager.p2Score >= 7)
         {
-            print("Player 2 Wins!!!");
+            print("Player 2 Wins the Game!!!");
             scoreManager.ResetScore();
+            RestartGame();
         }
+    }
+
+    public void RestartGame()
+    {
+        p1HandCards.Clear();
+        p2HandCards.Clear();
+        PlayCards();
     }
 
     public void PlayCards()

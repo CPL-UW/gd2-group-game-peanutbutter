@@ -232,12 +232,47 @@ public class UserInput : MonoBehaviour
     public void DiscardCards()
     {
         selectedCard = null;
+        int numSelected = 0;
+        // while (numSelected < 2)
+        while (false)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                // Detect which game object was clicked on
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10));
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+                if (hit)
+                {
+                    // What has been hit?
+                    if (hit.collider.CompareTag("PlayerCard") && toggleCamera.p1Camera.activeSelf)
+                    {
+                        // Clicked place to put card
+                        numSelected++;
+                    }
+                    else if (hit.collider.CompareTag("ComputerCard") && toggleCamera.p2Camera.activeSelf)
+                    {
+                        // Clicked place to put card
+                        numSelected++;
+                    }
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                break;
+            }
+        }
+    }
+
+    void DiscardCards(GameObject selected, bool isP1 = true)
+    {
+        
     }
 
     public void ChangeTurn()
     {
         selectedCard = null;
-        if (isP1Turn)
+        if (isP1Turn & CheckPlacement())
         {
             foreach (GameObject card in game.p1HandCards)
             {
@@ -255,61 +290,40 @@ public class UserInput : MonoBehaviour
         }
         else
         {
-            toggleCamera.ToggleP1Camera();
-            EndTurn();
+            if (CheckPlacement(false))
+            {
+                toggleCamera.ToggleP1Camera();
+                EndTurn();
+            }
         }
         isP1Turn = !isP1Turn;
     }
-    
+    bool CheckPlacement(bool isP1 = true)
+    {
+        bool isValid = true;
+
+        // Must be at least three cards placed
+
+        // Top rows must be filled before bottom rows
+
+        // Only values 1-5 & face cards can be in back row
+
+        // Joker must be alone in column
+
+        return isValid;
+    }
+
     public void EndTurn()
     {
-        int p1ColWins = 0;
-        int p2ColWins = 0;
-
-        // Calculate who wins round
-        int p1LefCol = GetValue(p1CombatPos[0, 0]) + GetValue(p1CombatPos[1, 0]);
-        int p1CenCol = GetValue(p1CombatPos[0, 1]) + GetValue(p1CombatPos[1, 1]);
-        int p1RigCol = GetValue(p1CombatPos[0, 2]) + GetValue(p1CombatPos[1, 2]);
-
-        int p2LefCol = GetValue(p2CombatPos[0, 0]) + GetValue(p2CombatPos[1, 0]);
-        int p2CenCol = GetValue(p2CombatPos[0, 1]) + GetValue(p2CombatPos[1, 1]);
-        int p2RigCol = GetValue(p2CombatPos[0, 2]) + GetValue(p2CombatPos[1, 2]);
-
-        if (p1LefCol > p2RigCol)
+        int result = CheckWinner();
+        if (result == 1)
         {
-            p1ColWins++;
-        }
-        else if (p2RigCol > p1LefCol)
-        {
-            p2ColWins++;
-        }
-
-        if (p1CenCol > p2CenCol)
-        {
-            p1ColWins++;
-        }
-        else if (p2CenCol > p1CenCol)
-        {
-            p2ColWins++;
-        }
-
-        if (p1RigCol > p2LefCol)
-        {
-            p1ColWins++;
-        }
-        else if (p2LefCol > p1RigCol)
-        {
-            p2ColWins++;
-        }
-
-        if (p1ColWins > p2ColWins)
-        {
-            print("Player 1 wins!");
+            print("Player 1 wins this round!");
             scoreManager.UpdateP1Score();
         }
-        else if (p2ColWins > p1ColWins)
+        else if (result == 2)
         {
-            print("Player 2 wins!");
+            print("Player 2 wins the round!");
             scoreManager.UpdateP2Score();
         }
         else
@@ -319,11 +333,13 @@ public class UserInput : MonoBehaviour
 
         foreach (GameObject card in p1PlayedCards)
         {
-            card.transform.position = new Vector3(game.playerDeckPos.transform.position.x, game.playerDeckPos.transform.position.y, game.playerDeckPos.transform.position.z+10);
+            card.transform.position = new Vector3(game.p1DiscardPos.transform.position.x, game.p1DiscardPos.transform.position.y, game.p1DiscardPos.transform.position.z-0.1f);
+            card.GetComponent<Selectable>().faceUp = true;
         }
         foreach (GameObject card in p2PlayedCards)
         {
-            card.transform.position = new Vector3(game.computerDeckPos.transform.position.x, game.computerDeckPos.transform.position.y, game.computerDeckPos.transform.position.z);
+            card.transform.position = new Vector3(game.p2DiscardPos.transform.position.x, game.p2DiscardPos.transform.position.y, game.p2DiscardPos.transform.position.z - 0.1f);
+            card.GetComponent<Selectable>().faceUp = true;
         }
 
         int p1HandCount = game.p1HandCards.Count;
@@ -358,5 +374,56 @@ public class UserInput : MonoBehaviour
         {
             return 0;
         }
+    }
+
+    int CheckWinner() // Return 1 if p1 and 2 if p2 and 0 if tie
+    {
+        int p1ColWins = 0;
+        int p2ColWins = 0;
+
+        // Calculate value of each card in combat arena
+        int p1TopLeft = GetValue(p1CombatPos[0, 0]);
+        int p1BotLeft = GetValue(p1CombatPos[1, 0]);
+        int p1TopCent = GetValue(p1CombatPos[0, 1]);
+        int p1BotCent = GetValue(p1CombatPos[1, 1]);
+        int p1TopRigh = GetValue(p1CombatPos[0, 2]);
+        int p1BotRigh = GetValue(p1CombatPos[1, 2]);
+
+        int p2TopLeft = GetValue(p2CombatPos[0, 0]);
+        int p2BotLeft = GetValue(p2CombatPos[1, 0]);
+        int p2TopCent = GetValue(p2CombatPos[0, 1]);
+        int p2BotCent = GetValue(p2CombatPos[1, 1]);
+        int p2TopRigh = GetValue(p2CombatPos[0, 2]);
+        int p2BotRigh = GetValue(p2CombatPos[1, 2]);
+
+        // Find All Win Conditions
+        // Aces (in front or back row) beat face cards in front rows
+
+        // Face cards are half value when in back row
+
+        // Red joker wins if opponents column total is odd
+
+        // Black joker wins if opponents column total is even
+
+        // Suit advantages
+        // Spades > Diamonds
+
+        // Diamonds > Clubs
+
+        // Clubs > Hearts
+
+        // Hearts > Spades
+
+        // Return who's the winner
+        int winner = 0;
+        if (p1ColWins > p2ColWins)
+        {
+            winner = 1;
+        }
+        else if (p2ColWins > p1ColWins)
+        {
+            winner = 2;
+        }
+        return winner;
     }
 }
