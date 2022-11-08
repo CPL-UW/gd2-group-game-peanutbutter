@@ -308,8 +308,6 @@ public class UserInput : MonoBehaviour
 
         // Only values 1-5 & face cards can be in back row
 
-        // Joker must be alone in column
-
         return isValid;
     }
 
