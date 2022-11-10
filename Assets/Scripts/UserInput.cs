@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class UserInput : MonoBehaviour
 {
@@ -231,6 +230,7 @@ public class UserInput : MonoBehaviour
 
     public void DiscardCards()
     {
+        /*
         selectedCard = null;
         int numSelected = 0;
         // while (numSelected < 2)
@@ -262,6 +262,7 @@ public class UserInput : MonoBehaviour
                 break;
             }
         }
+        */
     }
 
     void DiscardCards(GameObject selected, bool isP1 = true)
@@ -376,41 +377,315 @@ public class UserInput : MonoBehaviour
 
     int CheckWinner() // Return 1 if p1 and 2 if p2 and 0 if tie
     {
-        int p1ColWins = 0;
-        int p2ColWins = 0;
+        int leftColWinner = -1;
+        int centColWinner = -1;
+        int righColWinner = -1;
 
         // Calculate value of each card in combat arena
-        int p1TopLeft = GetValue(p1CombatPos[0, 0]);
-        int p1BotLeft = GetValue(p1CombatPos[1, 0]);
-        int p1TopCent = GetValue(p1CombatPos[0, 1]);
-        int p1BotCent = GetValue(p1CombatPos[1, 1]);
-        int p1TopRigh = GetValue(p1CombatPos[0, 2]);
-        int p1BotRigh = GetValue(p1CombatPos[1, 2]);
+        double p1TopLeft = GetValue(p1CombatPos[0, 0]);
+        double p1BotLeft = GetValue(p1CombatPos[1, 0]);
+        double p1TopCent = GetValue(p1CombatPos[0, 1]);
+        double p1BotCent = GetValue(p1CombatPos[1, 1]);
+        double p1TopRigh = GetValue(p1CombatPos[0, 2]);
+        double p1BotRigh = GetValue(p1CombatPos[1, 2]);
 
-        int p2TopLeft = GetValue(p2CombatPos[0, 0]);
-        int p2BotLeft = GetValue(p2CombatPos[1, 0]);
-        int p2TopCent = GetValue(p2CombatPos[0, 1]);
-        int p2BotCent = GetValue(p2CombatPos[1, 1]);
-        int p2TopRigh = GetValue(p2CombatPos[0, 2]);
-        int p2BotRigh = GetValue(p2CombatPos[1, 2]);
+        double p2TopLeft = GetValue(p2CombatPos[0, 0]);
+        double p2BotLeft = GetValue(p2CombatPos[1, 0]);
+        double p2TopCent = GetValue(p2CombatPos[0, 1]);
+        double p2BotCent = GetValue(p2CombatPos[1, 1]);
+        double p2TopRigh = GetValue(p2CombatPos[0, 2]);
+        double p2BotRigh = GetValue(p2CombatPos[1, 2]);
 
-        // Find All Win Conditions
-        // Aces (in front or back row) beat face cards in front rows
+        /*
+         * Find all win conditions
+         */
+        //// Red joker wins if opponents column total is odd
+        // Player 1
+        if ( (p1TopLeft == 14 && p1CombatPos[0,0].GetComponent<Selectable>().suit.Equals("R") && leftColWinner == -1) || 
+             (p1BotLeft == 14 && p1CombatPos[1,0].GetComponent<Selectable>().suit.Equals("R") && leftColWinner == -1) )
+        {
+            if (((p2TopRigh + p2BotRigh) % 2) == 1)
+            {
+                leftColWinner = 1;
+            }
+        }
+        else if ( (p1TopCent == 14 && p1CombatPos[0,1].GetComponent<Selectable>().suit.Equals("R") && centColWinner == -1) || 
+                  (p1BotCent == 14 && p1CombatPos[1,1].GetComponent<Selectable>().suit.Equals("R") && centColWinner == -1) )
+        {
+            if (((p2TopCent + p2BotCent) % 2) == 1)
+            {
+                centColWinner = 1;
+            }
+        }
+        else if ( (p1TopRigh == 14 && p1CombatPos[0,2].GetComponent<Selectable>().suit.Equals("R") && righColWinner == -1) || 
+                  (p1BotRigh == 14 && p1CombatPos[1,2].GetComponent<Selectable>().suit.Equals("R") && righColWinner == -1) )
+        {
+            if (((p2TopLeft + p2BotLeft) % 2) == 1)
+            {
+                righColWinner = 1;
+            }
+        }
+        // Player 2
+        if ( (p2TopLeft == 14 && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("R") && righColWinner == -1) ||
+             (p2BotLeft == 14 && p2CombatPos[1, 0].GetComponent<Selectable>().suit.Equals("R") && righColWinner == -1) )
+        {
+            if (((p1TopRigh + p1BotRigh) % 2) == 1)
+            {
+                leftColWinner = 2;
+            }
+        }
+        else if ( (p2TopCent == 14 && p2CombatPos[0,1].GetComponent<Selectable>().suit.Equals("R") && centColWinner == -1) ||
+                  (p2BotCent == 14 && p2CombatPos[1,1].GetComponent<Selectable>().suit.Equals("R") && centColWinner == -1) )
+        {
+            if (((p1TopCent + p1BotCent) % 2) == 1)
+            {
+                centColWinner = 2;
+            }
+        }
+        else if ( (p2TopRigh == 14 && p2CombatPos[0,2].GetComponent<Selectable>().suit.Equals("R") && leftColWinner == -1) ||
+                  (p2BotRigh == 14 && p2CombatPos[1,2].GetComponent<Selectable>().suit.Equals("R") && leftColWinner == -1) )
+        {
+            if (((p1TopLeft + p1BotLeft) % 2) == 1)
+            {
+                righColWinner = 2;
+            }
+        }
 
-        // Face cards are half value when in back row
+        //// Black joker wins if opponents column total is even
+        // Player 1
+        if ( (p1TopLeft == 14 && p1CombatPos[0,0].GetComponent<Selectable>().suit.Equals("B") && leftColWinner == -1) ||
+             (p1BotLeft == 14 && p1CombatPos[1,0].GetComponent<Selectable>().suit.Equals("B") && leftColWinner == -1) )
+        {
+            if (((p2TopRigh + p2BotRigh) % 2) == 0)
+            {
+                leftColWinner = 1;
+            }
+        }
+        else if ( (p1TopCent == 14 && p1CombatPos[0,1].GetComponent<Selectable>().suit.Equals("B") && centColWinner == -1) ||
+                  (p1BotCent == 14 && p1CombatPos[1,1].GetComponent<Selectable>().suit.Equals("B") && centColWinner == -1) )
+        {
+            if (((p2TopCent + p2BotCent) % 2) == 0)
+            {
+                centColWinner = 1;
+            }
+        }
+        else if ( (p1TopRigh == 14 && p1CombatPos[0,2].GetComponent<Selectable>().suit.Equals("B") && righColWinner == -1) ||
+                  (p1BotRigh == 14 && p1CombatPos[1,2].GetComponent<Selectable>().suit.Equals("B") && righColWinner == -1) )
+        {
+            if (((p2TopLeft + p2BotLeft) % 2) == 0)
+            {
+                righColWinner = 1;
+            }
+        }
+        // Player 2
+        if ( (p2TopLeft == 14 && p2CombatPos[0,0].GetComponent<Selectable>().suit.Equals("B") && righColWinner == -1) ||
+             (p2BotLeft == 14 && p2CombatPos[1,0].GetComponent<Selectable>().suit.Equals("B") && righColWinner == -1) )
+        {
+            if (((p1TopRigh + p1BotRigh) % 2) == 0)
+            {
+                leftColWinner = 2;
+            }
+        }
+        else if ( (p2TopCent == 14 && p2CombatPos[0,1].GetComponent<Selectable>().suit.Equals("B") && centColWinner == -1) ||
+                  (p2BotCent == 14 && p2CombatPos[1,1].GetComponent<Selectable>().suit.Equals("B") && centColWinner == -1) )
+        {
+            if (((p1TopCent + p1BotCent) % 2) == 0)
+            {
+                centColWinner = 2;
+            }
+        }
+        else if ( (p2TopRigh == 14 && p2CombatPos[0,2].GetComponent<Selectable>().suit.Equals("B") && leftColWinner == -1) ||
+                  (p2BotRigh == 14 && p2CombatPos[1,2].GetComponent<Selectable>().suit.Equals("B") && leftColWinner == -1) )
+        {
+            if (((p1TopLeft + p1BotLeft) % 2) == 0)
+            {
+                righColWinner = 2;
+            }
+        }
 
-        // Red joker wins if opponents column total is odd
+        //// Change values of jokers to 0
+        // Player 1
+        if (p1TopLeft == 14)
+        {
+            p1TopLeft = 0;
+        }
+        if (p1BotLeft == 14)
+        {
+            p1BotLeft = 0;
+        }
+        if (p1TopCent == 14)
+        {
+            p1TopCent = 0;
+        }
+        if (p1BotCent == 14)
+        {
+            p1BotCent = 0;
+        }
+        if (p1TopRigh == 14)
+        {
+            p1TopRigh = 0;
+        }
+        if (p1BotRigh == 14)
+        {
+            p1BotRigh = 0;
+        }
+        // Player 2
+        if (p2TopLeft == 14)
+        {
+            p2TopLeft = 0;
+        }
+        if (p2BotLeft == 14)
+        {
+            p2BotLeft = 0;
+        }
+        if (p2TopCent == 14)
+        {
+            p2TopCent = 0;
+        }
+        if (p2BotCent == 14)
+        {
+            p2BotCent = 0;
+        }
+        if (p2TopRigh == 14)
+        {
+            p2TopRigh = 0;
+        }
+        if (p2BotRigh == 14)
+        {
+            p2BotRigh = 0;
+        }
 
-        // Black joker wins if opponents column total is even
+        //// Face cards are half value when in back row
+        // Player 1
+        if (p1BotLeft > 10)
+        {
+            p1BotLeft = p1BotLeft / 2;
+        }
+        if (p1BotCent > 10)
+        {
+            p1BotCent = p1BotCent / 2;
+        }
+        if (p1BotRigh > 10)
+        {
+            p1BotRigh = p1BotRigh / 2;
+        }
+        // Player 2
+        if (p2BotLeft > 10)
+        {
+            p2BotLeft = p2BotLeft / 2;
+        }
+        if (p2BotCent > 10)
+        {
+            p2BotCent = p2BotCent / 2;
+        }
+        if (p2BotRigh > 10)
+        {
+            p2BotRigh = p2BotRigh / 2;
+        }
 
-        // Suit advantages
-        // Spades > Diamonds
+        //// Aces (in front or back row) beat face cards in front rows
+        // Player 1
+        if ( (p1TopLeft == 1 || p1BotLeft == 1) && p2TopRigh > 10 && leftColWinner == -1)
+        {
+            leftColWinner = 1;
+        }
+        if ((p1TopCent == 1 || p1BotCent == 1) && p2TopCent > 10 && centColWinner == -1)
+        {
+            centColWinner = 1;
+        }
+        if ((p1TopRigh == 1 || p1BotRigh == 1) && p2TopLeft > 10 && righColWinner == -1)
+        {
+            righColWinner = 1;
+        }
+        // Player 2
+        if ((p2TopLeft == 1 || p2BotLeft == 1) && p1TopRigh > 10 && righColWinner == -1)
+        {
+            leftColWinner = 2;
+        }
+        if ((p2TopCent == 1 || p2BotCent == 1) && p1TopCent > 10 && centColWinner == -1)
+        {
+            centColWinner = 2;
+        }
+        if ((p2TopRigh == 1 || p2BotRigh == 1) && p1TopLeft > 10 && leftColWinner == -1)
+        {
+            righColWinner = 2;
+        }
 
-        // Diamonds > Clubs
+        //// Suit advantages
+        //// Spades > Diamonds
+        // Player 1
+        // Player 2
 
-        // Clubs > Hearts
+        //// Diamonds > Clubs
+        // Player 1
+        // Player 2
 
-        // Hearts > Spades
+        //// Clubs > Hearts
+        // Player 1
+        // Player 2
+
+        //// Hearts > Spades
+        // Player 1
+        // Player 2
+
+        //// General winning calculations
+        // Left column
+        if ((p1TopLeft + p1BotLeft) > (p2TopRigh + p2BotRigh))
+        {
+            leftColWinner = 1;
+        }
+        else if ((p1TopLeft + p1BotLeft) < (p2TopRigh + p2BotRigh))
+        {
+            leftColWinner = 2;
+        }
+        // Center column
+        if ((p1TopCent + p1BotCent) > (p2TopCent + p2BotCent))
+        {
+            centColWinner = 1;
+        }
+        else if ((p1TopCent + p1BotCent) < (p2TopCent + p2BotCent))
+        {
+            centColWinner = 2;
+        }
+        // Right column
+        if ((p1TopRigh + p1BotRigh) > (p2TopLeft + p2BotLeft))
+        {
+            righColWinner = 1;
+        }
+        else if ((p1TopRigh + p1BotRigh) < (p2TopLeft + p2BotLeft))
+        {
+            righColWinner = 2;
+        }
+
+        //// Calculate column wins
+        int p1ColWins = 0;
+        int p2ColWins = 0;
+        // Player 1
+        if (leftColWinner == 1)
+        {
+            p1ColWins++;
+        }
+        if (righColWinner == 1)
+        {
+            p1ColWins++;
+        }
+        if (righColWinner == 1)
+        {
+            p1ColWins++;
+        }
+        // Player 2
+        if (leftColWinner == 2)
+        {
+            p2ColWins++;
+        }
+        if (righColWinner == 2)
+        {
+            p2ColWins++;
+        }
+        if (righColWinner == 2)
+        {
+            p2ColWins++;
+        }
 
         // Return who's the winner
         int winner = 0;
