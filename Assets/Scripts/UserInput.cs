@@ -313,7 +313,12 @@ public class UserInput : MonoBehaviour
 
     public void EndTurn()
     {
-        int result = CheckWinner();
+        int[] results = CheckWinner();
+        int result = results[0];
+        int leftColWinner = results[1];
+        int centColWinner = results[2];
+        int righColWinner = results[3];
+
         if (result == 1)
         {
             print("Player 1 wins this round!");
@@ -377,7 +382,7 @@ public class UserInput : MonoBehaviour
         }
     }
 
-    int CheckWinner() // Return 1 if p1 and 2 if p2 and 0 if tie
+    int[] CheckWinner() // Return 1 if p1 and 2 if p2 and 0 if tie
     {
         int leftColWinner = -1;
         int centColWinner = -1;
@@ -795,6 +800,6 @@ public class UserInput : MonoBehaviour
         {
             winner = 2;
         }
-        return winner;
+        return new int[4] {winner, leftColWinner, centColWinner, righColWinner};
     }
 }
