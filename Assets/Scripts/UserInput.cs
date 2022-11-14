@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 public class UserInput : MonoBehaviour
 {
@@ -273,7 +274,7 @@ public class UserInput : MonoBehaviour
     public void ChangeTurn()
     {
         selectedCard = null;
-        if (isP1Turn & CheckPlacement())
+        if (isP1Turn && (p1PlayedCards.Count>0) && CheckPlacement())
         {
             foreach (GameObject card in game.p1HandCards)
             {
@@ -288,16 +289,14 @@ public class UserInput : MonoBehaviour
                 card.GetComponent<Selectable>().faceUp = true;
             }
             toggleCamera.ToggleP2Camera();
+            isP1Turn = !isP1Turn;
         }
-        else
+        else if ( (p2PlayedCards.Count > 0) && CheckPlacement(false) )
         {
-            if (CheckPlacement(false))
-            {
-                toggleCamera.ToggleP1Camera();
-                EndTurn();
-            }
+            toggleCamera.ToggleP1Camera();
+            EndTurn();
+            isP1Turn = !isP1Turn;
         }
-        isP1Turn = !isP1Turn;
     }
     bool CheckPlacement(bool isP1 = true)
     {
@@ -358,6 +357,9 @@ public class UserInput : MonoBehaviour
 
         p1PlayedCards.Clear();
         p2PlayedCards.Clear();
+
+        Array.Clear(p1CombatPos,0,p1CombatPos.Length);
+        Array.Clear(p2CombatPos,0,p2CombatPos.Length);
 
         selectedCard = null;
         game.StartOfTurn();
@@ -614,19 +616,115 @@ public class UserInput : MonoBehaviour
         //// Suit advantages
         //// Spades > Diamonds
         // Player 1
+        if (p1CombatPos[0,0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("S") && p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p1TopLeft += 2;
+        }
+        if (p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("S") && p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p1TopCent += 2;
+        }
+        if (p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("S") && p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p1TopRigh += 2;
+        }
         // Player 2
+        if (p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("S") && p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p2TopLeft += 2;
+        }
+        if (p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("S") && p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p2TopCent += 2;
+        }
+        if (p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("S") && p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("D"))
+        {
+            p2TopRigh += 2;
+        }
 
         //// Diamonds > Clubs
         // Player 1
+        if (p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("D") && p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p1TopLeft += 2;
+        }
+        if (p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("D") && p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p1TopCent += 2;
+        }
+        if (p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("D") && p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p1TopRigh += 2;
+        }
         // Player 2
+        if (p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("D") && p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p2TopLeft += 2;
+        }
+        if (p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("D") && p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p2TopCent += 2;
+        }
+        if (p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("D") && p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("C"))
+        {
+            p2TopRigh += 2;
+        }
 
         //// Clubs > Hearts
         // Player 1
+        if (p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("C") && p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p1TopLeft += 2;
+        }
+        if (p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("C") && p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p1TopCent += 2;
+        }
+        if (p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("C") && p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p1TopRigh += 2;
+        }
         // Player 2
+        if (p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("C") && p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p2TopLeft += 2;
+        }
+        if (p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("C") && p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p2TopCent += 2;
+        }
+        if (p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("C") && p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("H"))
+        {
+            p2TopRigh += 2;
+        }
 
         //// Hearts > Spades
         // Player 1
+        if (p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("H") && p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p1TopLeft += 2;
+        }
+        if (p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("H") && p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p1TopCent += 2;
+        }
+        if (p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("H") && p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p1TopRigh += 2;
+        }
         // Player 2
+        if (p2CombatPos[0, 0] && p2CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("H") && p1CombatPos[0, 2] && p1CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p2TopLeft += 2;
+        }
+        if (p2CombatPos[0, 1] && p2CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("H") && p1CombatPos[0, 1] && p1CombatPos[0, 1].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p2TopCent += 2;
+        }
+        if (p2CombatPos[0, 2] && p2CombatPos[0, 2].GetComponent<Selectable>().suit.Equals("H") && p1CombatPos[0, 0] && p1CombatPos[0, 0].GetComponent<Selectable>().suit.Equals("S"))
+        {
+            p2TopRigh += 2;
+        }
 
         //// General winning calculations
         // Left column
@@ -665,7 +763,7 @@ public class UserInput : MonoBehaviour
         {
             p1ColWins++;
         }
-        if (righColWinner == 1)
+        if (centColWinner == 1)
         {
             p1ColWins++;
         }
@@ -678,7 +776,7 @@ public class UserInput : MonoBehaviour
         {
             p2ColWins++;
         }
-        if (righColWinner == 2)
+        if (centColWinner == 2)
         {
             p2ColWins++;
         }
