@@ -19,13 +19,14 @@ public class UpdateSprite : MonoBehaviour
         List<string> computerDeck = Game.GenerateDeck(false);
         game = FindObjectOfType<Game>();
         userInput = FindObjectOfType<UserInput>();
+        Vector3 scale = new Vector3(0.33f, 0.33f, 1.0f);
 
         int i = 0;
         foreach (string card in playerDeck)
         {
             if (this.name == card)
             {
-                transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                transform.localScale = scale;
                 cardFace = game.p1CardFaces[i];
                 break;
             }
@@ -36,7 +37,7 @@ public class UpdateSprite : MonoBehaviour
         {
             if (this.name == card)
             {
-                transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                transform.localScale = scale;
                 cardFace = game.p2CardFaces[i];
                 break;
             }

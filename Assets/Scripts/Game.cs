@@ -31,6 +31,25 @@ public class Game : MonoBehaviour
     public List<GameObject> p1HandCards;
     public List<GameObject> p2HandCards;
 
+    public Sprite p1Portal;
+    public Sprite p1PortalSelected;
+    public Sprite p2Portal;
+    public Sprite p2PortalSelected;
+
+    public GameObject p1TopLeft;
+    public GameObject p1BotLeft;
+    public GameObject p1TopCent;
+    public GameObject p1BotCent;
+    public GameObject p1TopRigh;
+    public GameObject p1BotRigh;
+
+    public GameObject p2TopLeft;
+    public GameObject p2BotLeft;
+    public GameObject p2TopCent;
+    public GameObject p2BotCent;
+    public GameObject p2TopRigh;
+    public GameObject p2BotRigh;
+
     public const int handSize = 6;
 
     // Start is called before the first frame update
@@ -153,7 +172,7 @@ public class Game : MonoBehaviour
             zOffset += 0.03f;
         }
 
-        float xOffset = 1.15f;
+        float xOffset = 1.05f;
         zOffset = 0.03f;
         foreach (string card in hand)
         {
@@ -176,7 +195,7 @@ public class Game : MonoBehaviour
             {
                 p2HandCards.Add(newCard);
             }
-            xOffset += 1.35f;
+            xOffset += 1.42f;
             zOffset += 0.03f;
         }
     }

@@ -9,6 +9,7 @@ public class UserInput : MonoBehaviour
     private Game game;
     private ToggleCamera toggleCamera;
     private ScoreManager scoreManager;
+    private SpriteRenderer spriteRenderer;
 
     private List<GameObject> p1PlayedCards;
     private List<GameObject> p2PlayedCards;
@@ -41,6 +42,14 @@ public class UserInput : MonoBehaviour
     void Update()
     {
         GetMouseClick();
+        if (isP1Turn)
+        {
+            P1CombatColor(selectedCard);
+        }
+        else
+        {
+            P2CombatColor(selectedCard);
+        }    
     }
 
     void GetMouseClick()
@@ -56,32 +65,32 @@ public class UserInput : MonoBehaviour
                 if (hit.collider.CompareTag("p1ComTL") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,0,0);
+                    P1Combat(hit.collider.gameObject,0,0,game.p1TopLeft);
                 }
                 else if (hit.collider.CompareTag("p1ComBL") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,1,0);
+                    P1Combat(hit.collider.gameObject,1,0,game.p1BotLeft);
                 }
                 else if (hit.collider.CompareTag("p1ComTC") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,0,1);
+                    P1Combat(hit.collider.gameObject,0,1,game.p1TopCent);
                 }
                 else if (hit.collider.CompareTag("p1ComBC") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,1,1);
+                    P1Combat(hit.collider.gameObject,1,1,game.p1BotCent);
                 }
                 else if (hit.collider.CompareTag("p1ComTR") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,0,2);
+                    P1Combat(hit.collider.gameObject,0,2,game.p1TopRigh);
                 }
                 else if (hit.collider.CompareTag("p1ComBR") && toggleCamera.p1Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P1Combat(hit.collider.gameObject,1,2);
+                    P1Combat(hit.collider.gameObject,1,2,game.p1BotRigh);
                 }
                 else if (hit.collider.CompareTag("PlayerCard") && toggleCamera.p1Camera.activeSelf)
                 {
@@ -91,32 +100,32 @@ public class UserInput : MonoBehaviour
                 else if (hit.collider.CompareTag("p2ComTL") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,0,0);
+                    P2Combat(hit.collider.gameObject,0,0,game.p2TopLeft);
                 }
                 else if (hit.collider.CompareTag("p2ComBL") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,1,0);
+                    P2Combat(hit.collider.gameObject,1,0,game.p2BotLeft);
                 }
                 else if (hit.collider.CompareTag("p2ComTC") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,0,1);
+                    P2Combat(hit.collider.gameObject,0,1,game.p2TopCent);
                 }
                 else if (hit.collider.CompareTag("p2ComBC") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,1,1);
+                    P2Combat(hit.collider.gameObject,1,1,game.p2BotCent);
                 }
                 else if (hit.collider.CompareTag("p2ComTR") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,0,2);
+                    P2Combat(hit.collider.gameObject,0,2,game.p2TopRigh);
                 }
                 else if (hit.collider.CompareTag("p2ComBR") && toggleCamera.p2Camera.activeSelf)
                 {
                     // Clicked place to put card
-                    P2Combat(hit.collider.gameObject,1,2);
+                    P2Combat(hit.collider.gameObject,1,2,game.p2BotRigh);
                 }
                 else if (hit.collider.CompareTag("ComputerCard") && toggleCamera.p2Camera.activeSelf)
                 {
@@ -127,22 +136,22 @@ public class UserInput : MonoBehaviour
         }
     }
 
-    void P1Combat(GameObject selected, int row, int col)
+    void P1Combat(GameObject selected, int row, int col, GameObject position)
     {
-        if (selectedCard)
+        if (selectedCard && (position.GetComponent<SpriteRenderer>().sprite == game.p1PortalSelected))
         {
             if (game.playerHand.Contains(selectedCard.name))
             {
                 p1Prev.Add(selectedCard.transform.position);
             }
-            
+
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
             p1CombatPos[row, col] = selectedCard;
             p1PlayedCards.Add(selectedCard);
             game.playerHand.Remove(selectedCard.name);
             game.p1HandCards.Remove(selectedCard);
+            selectedCard = null;
         }
-        selectedCard = null;
     }
 
     void PlayerCard(GameObject selected)
@@ -177,10 +186,41 @@ public class UserInput : MonoBehaviour
             selectedCard = selected;
         }
     }
-    
-    void P2Combat(GameObject selected, int row, int col)
+
+    void P1CombatColor(GameObject card)
     {
-        if (selectedCard)
+        if (selectedCard && ((card.GetComponent<Selectable>().value < 6) || (card.GetComponent<Selectable>().value > 10)) )
+        {
+            game.p1TopLeft.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotLeft.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1TopCent.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotCent.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1TopRigh.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotRigh.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+        }
+        else if (selectedCard)
+        {
+            game.p1TopLeft.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotLeft.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1TopCent.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotCent.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1TopRigh.GetComponent<SpriteRenderer>().sprite = game.p1PortalSelected;
+            game.p1BotRigh.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+        }
+        else
+        {
+            game.p1TopLeft.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1BotLeft.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1TopCent.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1BotCent.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1TopRigh.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+            game.p1BotRigh.GetComponent<SpriteRenderer>().sprite = game.p1Portal;
+        }
+    }
+
+    void P2Combat(GameObject selected, int row, int col, GameObject position)
+    {
+        if (selectedCard && (position.GetComponent<SpriteRenderer>().sprite == game.p2PortalSelected))
         {
             if (game.computerHand.Contains(selectedCard.name))
             {
@@ -192,8 +232,8 @@ public class UserInput : MonoBehaviour
             p2PlayedCards.Add(selectedCard);
             game.computerHand.Remove(selectedCard.name);
             game.p2HandCards.Remove(selectedCard);
+            selectedCard = null;
         }
-        selectedCard = null;
     }
 
     void ComputerCard(GameObject selected)
@@ -226,6 +266,37 @@ public class UserInput : MonoBehaviour
         else
         {
             selectedCard = selected;
+        }
+    }
+
+    void P2CombatColor(GameObject card)
+    {
+        if (selectedCard && ((card.GetComponent<Selectable>().value < 6) || (card.GetComponent<Selectable>().value > 10)))
+        {
+            game.p2TopLeft.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotLeft.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2TopCent.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotCent.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2TopRigh.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotRigh.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+        }
+        else if (selectedCard)
+        {
+            game.p2TopLeft.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotLeft.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2TopCent.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotCent.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2TopRigh.GetComponent<SpriteRenderer>().sprite = game.p2PortalSelected;
+            game.p2BotRigh.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+        }
+        else
+        {
+            game.p2TopLeft.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2BotLeft.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2TopCent.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2BotCent.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2TopRigh.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
+            game.p2BotRigh.GetComponent<SpriteRenderer>().sprite = game.p2Portal;
         }
     }
 
@@ -290,10 +361,12 @@ public class UserInput : MonoBehaviour
             }
             toggleCamera.ToggleP2Camera();
             isP1Turn = !isP1Turn;
+            P1CombatColor(selectedCard);
         }
         else if ( (p2PlayedCards.Count > 0) && CheckPlacement(false) )
         {
             toggleCamera.ToggleP1Camera();
+            P2CombatColor(selectedCard);
             EndTurn();
             isP1Turn = !isP1Turn;
         }
