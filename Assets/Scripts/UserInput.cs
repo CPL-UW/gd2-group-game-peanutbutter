@@ -2,6 +2,7 @@
 using System.Linq;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class UserInput : MonoBehaviour
 {
@@ -20,6 +21,13 @@ public class UserInput : MonoBehaviour
 
     private List<Vector3> p1Prev;
     private List<Vector3> p2Prev;
+
+    public TextMeshProUGUI roundWinText;
+
+    [SerializeField] public Animator textFade;
+
+    public AudioSource source;
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
@@ -140,6 +148,8 @@ public class UserInput : MonoBehaviour
     {
         if (selectedCard && (position.GetComponent<SpriteRenderer>().sprite == game.p1PortalSelected))
         {
+            playCardAudio();
+
             if (game.playerHand.Contains(selectedCard.name))
             {
                 p1Prev.Add(selectedCard.transform.position);
@@ -222,10 +232,14 @@ public class UserInput : MonoBehaviour
     {
         if (selectedCard && (position.GetComponent<SpriteRenderer>().sprite == game.p2PortalSelected))
         {
+            playCardAudio();
             if (game.computerHand.Contains(selectedCard.name))
             {
                 p2Prev.Add(selectedCard.transform.position);
             }
+
+            //Restarts text fade out animation for next round
+            textFade.SetBool("isShowingText", false);
 
             selectedCard.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z - 1);
             p2CombatPos[row, col] = selectedCard;
@@ -396,15 +410,21 @@ public class UserInput : MonoBehaviour
         {
             print("Player 1 wins this round!");
             scoreManager.UpdateP1Score();
+            roundWinText.text = "Player 1 wins this round!";
+            textFade.SetBool("isShowingText", true);
         }
         else if (result == 2)
         {
             print("Player 2 wins the round!");
             scoreManager.UpdateP2Score();
+            roundWinText.text = "Player 2 wins this round!";
+            textFade.SetBool("isShowingText", true);
         }
         else
         {
             print("It's a tie!");
+            roundWinText.text = "It's a tie";
+            textFade.SetBool("isShowingText", true);
         }
 
         foreach (GameObject card in p1PlayedCards)
@@ -874,5 +894,9 @@ public class UserInput : MonoBehaviour
             winner = 2;
         }
         return new int[4] {winner, leftColWinner, centColWinner, righColWinner};
+    }
+
+    void playCardAudio() {
+        source.PlayOneShot(clip);
     }
 }

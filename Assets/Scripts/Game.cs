@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using TMPro;
 
 public class Game : MonoBehaviour
 {
@@ -52,6 +53,11 @@ public class Game : MonoBehaviour
 
     public const int handSize = 6;
 
+    public TextMeshProUGUI gameWinText;
+
+    public AudioSource source;
+    public AudioClip clip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,12 +74,14 @@ public class Game : MonoBehaviour
         if (scoreManager.p1Score >= 7)
         {
             print("Player 1 Wins the Game!!!");
+            gameWinText.text = "Player 1 Wins the Game!!!";
             scoreManager.ResetScore();
             RestartGame();
         }
         else if (scoreManager.p2Score >= 7)
         {
             print("Player 2 Wins the Game!!!");
+            gameWinText.text = "Player 2 Wins the Game!!!";
             scoreManager.ResetScore();
             RestartGame();
         }
@@ -88,6 +96,7 @@ public class Game : MonoBehaviour
 
     public void PlayCards()
     {
+        source.PlayOneShot(clip);
         playerDeck = GenerateDeck();
         Shuffle(playerDeck);
         computerDeck = GenerateDeck(false);
