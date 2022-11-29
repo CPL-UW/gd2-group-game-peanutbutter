@@ -192,34 +192,6 @@ public class Game : MonoBehaviour
         }
 
         DealHand(cardPrefab, hand, handPos, rotation, isP1);
-        /*
-        float xOffset = 1.05f;
-        zOffset = 0.03f;
-        foreach (string card in hand)
-        {
-            GameObject newCard = Instantiate(
-                                        cardPrefab,
-                                        new Vector3(handPos.transform.position.x - xOffset, handPos.transform.position.y, handPos.transform.position.z - zOffset),
-                                        rotation,
-                                        handPos.transform
-                                  );
-            newCard.name = card;
-            if (isP1)
-            {
-                newCard.GetComponent<Selectable>().faceUp = true;
-            }
-            if (isP1)
-            {
-                p1HandCards.Add(newCard);
-            }
-            else
-            {
-                p2HandCards.Add(newCard);
-            }
-            xOffset += 1.42f;
-            zOffset += 0.03f;
-        }
-        */
     }
 
     void DealHand(GameObject cardPrefab, List<string> hand, GameObject handPos, Quaternion rotation, bool isP1 = true)
@@ -257,7 +229,6 @@ public class Game : MonoBehaviour
         for (int i = hand.Count; i < handSize; i++)
         {
             hand.Add(deck.Last<string>());
-            //deck.RemoveAt(deck.Count - 1);
             deck.Remove(deck.Last<string>());
         }
     }

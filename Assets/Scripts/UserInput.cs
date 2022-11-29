@@ -458,6 +458,9 @@ public class UserInput : MonoBehaviour
         p1PlayedCards.Clear();
         p2PlayedCards.Clear();
 
+        p1Prev.Clear();
+        p2Prev.Clear();
+
         Array.Clear(p1CombatPos,0,p1CombatPos.Length);
         Array.Clear(p2CombatPos,0,p2CombatPos.Length);
 
