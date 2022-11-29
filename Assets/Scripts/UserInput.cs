@@ -316,39 +316,14 @@ public class UserInput : MonoBehaviour
 
     public void DiscardCards()
     {
-        /*
-        selectedCard = null;
-        int numSelected = 0;
-        // while (numSelected < 2)
-        while (false)
+        if (toggleCamera.p1Camera.activeSelf)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                // Detect which game object was clicked on
-                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10));
-                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-                if (hit)
-                {
-                    // What has been hit?
-                    if (hit.collider.CompareTag("PlayerCard") && toggleCamera.p1Camera.activeSelf)
-                    {
-                        // Clicked place to put card
-                        numSelected++;
-                    }
-                    else if (hit.collider.CompareTag("ComputerCard") && toggleCamera.p2Camera.activeSelf)
-                    {
-                        // Clicked place to put card
-                        numSelected++;
-                    }
-                }
-            }
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                break;
-            }
         }
-        */
+        else if (toggleCamera.p2Camera.activeSelf)
+        {
+            
+        }
     }
 
     void DiscardCards(GameObject selected, bool isP1 = true)
