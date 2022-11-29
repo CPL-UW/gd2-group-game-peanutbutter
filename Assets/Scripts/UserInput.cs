@@ -167,7 +167,7 @@ public class UserInput : MonoBehaviour
     void PlayerCard(GameObject selected)
     {
         // Check rules for not selecting card
-        if ((game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1)) || game.playerDeck.Contains(selected.name))
+        if ((game.playerHand.Contains(selected.name) && (game.playerHand.Count <= 1)) || game.playerDeck.Contains(selected.name) || game.p1Discard.Contains(selected.name))
         {
             // Do nothing
         }
@@ -253,7 +253,7 @@ public class UserInput : MonoBehaviour
     void ComputerCard(GameObject selected)
     {
         // Check rules for not selecting card
-        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1) || game.computerDeck.Contains(selected.name))
+        if (game.computerHand.Contains(selected.name) && (game.computerHand.Count <= 1) || game.computerDeck.Contains(selected.name) || game.p2Discard.Contains(selected.name))
         {
             // Do nothing
         }
@@ -431,11 +431,13 @@ public class UserInput : MonoBehaviour
         {
             card.transform.position = new Vector3(game.p1DiscardPos.transform.position.x, game.p1DiscardPos.transform.position.y, game.p1DiscardPos.transform.position.z-0.1f);
             card.GetComponent<Selectable>().faceUp = true;
+            game.p1Discard.Add(card.name);
         }
         foreach (GameObject card in p2PlayedCards)
         {
             card.transform.position = new Vector3(game.p2DiscardPos.transform.position.x, game.p2DiscardPos.transform.position.y, game.p2DiscardPos.transform.position.z - 0.1f);
             card.GetComponent<Selectable>().faceUp = true;
+            game.p1Discard.Add(card.name);
         }
 
         int p1HandCount = game.p1HandCards.Count;
