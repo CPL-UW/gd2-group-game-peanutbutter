@@ -21,6 +21,7 @@ TagManager:
   - p2ComBC
   - p2ComTR
   - p2ComBR
+  - GameMusic
   layers:
   - Default
   - TransparentFX
