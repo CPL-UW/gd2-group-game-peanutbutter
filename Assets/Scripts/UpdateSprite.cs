@@ -8,17 +8,17 @@ public class UpdateSprite : MonoBehaviour
     public Sprite cardBack;
     private SpriteRenderer spriteRenderer;
     private Selectable selectable;
-    private Game game;
-    private UserInput userInput;
+    private Game_SP game;
+    private UserInput_SP userInput;
     private ToggleCamera toggleCamera;
     
     // Start is called before the first frame update
     void Start()
     {
-        List<string> playerDeck = Game.GenerateDeck();
-        List<string> computerDeck = Game.GenerateDeck(false);
-        game = FindObjectOfType<Game>();
-        userInput = FindObjectOfType<UserInput>();
+        List<string> playerDeck = Game_SP.GenerateDeck();
+        List<string> computerDeck = Game_SP.GenerateDeck(false);
+        game = FindObjectOfType<Game_SP>();
+        userInput = FindObjectOfType<UserInput_SP>();
         Vector3 scale = new Vector3(0.33f, 0.33f, 1.0f);
 
         int i = 0;

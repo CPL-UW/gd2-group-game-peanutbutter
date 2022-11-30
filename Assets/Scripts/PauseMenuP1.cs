@@ -17,7 +17,7 @@ public class PauseMenuP1 : MonoBehaviour
             {
                 ResumeP1();
             }
-            else if(p1Camera.active)
+            else if(p1Camera.activeSelf)
             {
                 PauseP1();
             }

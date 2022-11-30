@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame ()
+    public void SinglePlayer ()
     {
-        // SceneManager.LoadScene("SinglePlayer");
+        SceneManager.LoadScene("SinglePlayer");
     }
 
     public void Multiplayer()
