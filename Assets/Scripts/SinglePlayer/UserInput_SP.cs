@@ -229,7 +229,6 @@ public class UserInput_SP : MonoBehaviour
 
     public void ChangeTurn()
     {
-        print("Change Turn");
         selectedCard = null;
         if (isP1Turn && (p1PlayedCards.Count>0) && CheckPlacement())
         {
@@ -264,6 +263,7 @@ public class UserInput_SP : MonoBehaviour
         p2PlayedCards.Add(game.p2HandCards[4]);
         foreach (GameObject card in p2PlayedCards)
         {
+            game.p2HandCards.Remove(card);
             card.GetComponent<Selectable>().faceUp = true;
         }
         // ChangeTurn();
