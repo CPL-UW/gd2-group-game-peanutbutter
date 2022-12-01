@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: 10555e19e42c7e14586d33f71eaf694c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8afe089a2207740b33cc987361f989
+      internalID: 607194398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0112c3e4c346bc4e9cb9b68d1cde0c7
+      internalID: 1815650483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280be4513161410498ab2bac50aa7773
+      internalID: 2038072777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a665cf16bd343804c8093796f25833fb
+      internalID: -1135614726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b2d839f8444ec4687829af89a870d0
+      internalID: -1374402323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b485f0936a9295847a319a60ae239dac
+      internalID: -1435652448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_6
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96735273868f69342a215132753417e3
+      internalID: -760072536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec10617c54c5c94b81f32bbdbdd8160
+      internalID: 563725369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_8
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20a488bab9b35a4ab5a225485756f76
+      internalID: -1360849557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_9
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5648d0c6691d3d0408d7167f83f2eb46
+      internalID: 1818714871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5c0ca073b9b084e97c01a9080aa14b
+      internalID: -19105149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41903c9776c9164e825d00fcd7cf7a7
+      internalID: 1252359042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60226ef5104ccba4492e9c14fd929187
+      internalID: 759875444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc874056671d9a4e863b0adbb8d1bd6
+      internalID: 1480391557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1583640ba1c625a419cc8bd40cf6d791
+      internalID: 1728939138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_15
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e3ff6fb1be001468596cf5e00578bb
+      internalID: 1240521917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_16
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0655871251d735e46b00c353f5120774
+      internalID: -271113148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_17
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca71c9c87e0c2664a949668b7a71b613
+      internalID: 620832742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_18
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f7c84fc18308641b5c32dce4448431
+      internalID: -115185459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_19
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6d365a232de1a4384ace45d66f2682
+      internalID: 645948503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0bc4d0ef7520849b4231b48dbf3b2e
+      internalID: -1075423958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7ede52d41f345459a9b69966855015
+      internalID: 132173871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b11ff5cc59a9b4288ec0f1c3519918
+      internalID: 1945396423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ba8b41f1aa86c44b49eda35fe65518
+      internalID: 354172723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d8b060c54e920498f1e3c1aa567e0a
+      internalID: -1812338077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_25
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65c6cd6bc5abdb42b054548d34f6fa6
+      internalID: -662003693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_26
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8805ef3f4f6e024a95d7c010fd9ec3c
+      internalID: 439486787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_27
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b46593b86442dc4ab03cbfe9b0f5665
+      internalID: 38370060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_28
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438dbe5dc44e51a4d8f3e58bbf84dbf9
+      internalID: -445538310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_29
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c93d26ebf83bf4387b3f8638c7abf4
+      internalID: -2097603256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76e09eec3ac92347891e5a26db003d4
+      internalID: -3924921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90178c43293e9fd4abf95d9f45dcd70f
+      internalID: 650804697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f341902a4b4d745b057df8a916b536
+      internalID: -1707659076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516ea92ff70f5aa40880621ffec1aa00
+      internalID: 1710712689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e349b2e59a63f419a7e269fc4d71ac
+      internalID: 526159136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_35
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f1fe95c66971f49addbe118af045fd
+      internalID: 749565782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_36
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d06cc5b69a46fc4fae54eba140c08de
+      internalID: 2119076065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_37
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87997811ce490dd41930245859790929
+      internalID: 638470756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_38
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7302530b2e3ade468a35cea232b547a
+      internalID: 630692648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_39
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e989784a8e70cf40b3e0aba6d56e917
+      internalID: 1761339734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228a31f7d9a128440a073bf59b40553b
+      internalID: 1144086822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d014499a37441a4cb4fb7fe87324611
+      internalID: -569355159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a842d65f810998b46b803a0f3d24efc1
+      internalID: -424408761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a997f0bab8d6aa343ac663aaa5c47e7e
+      internalID: 1121067316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f9aff287209fe48b79d55c37a129d0
+      internalID: -640905494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_45
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815e902955a29ff43b47c6ae1db876fa
+      internalID: 763639459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_46
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec775caf2c933e4b928a49e9cd6f3e3
+      internalID: 1465494249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_47
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd96d76d193ee3429f6e45959f02ec5
+      internalID: -593848069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_48
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e73b7fe268dfc747a70475278153ef2
+      internalID: -220915077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_49
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea65cc49c564746949b205888aec2d
+      internalID: -1224335917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efddf83004d3a04c9d37c081de34b90
+      internalID: 197057494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20940cb88e43c074da1a15dd4b4392ec
+      internalID: 46679183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008ae7ba00a4f8b42a89de775754f3f2
+      internalID: -390590385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9279fb1357850fb4eaea717e36635b0c
+      internalID: 2105587733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e37d56fa324084bbc47c2c1ddc7397
+      internalID: -982489842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_55
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c62f894f22002a40a4e9573edbcf1de
+      internalID: 1463678073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_56
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b7994926d3b9c4e904770aa6f0311f
+      internalID: -1171554255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_57
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1241be9e3bb304ca50e7237d0dbf57
+      internalID: 1390101484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_58
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b639d51e64b0c094fbc852042883b04a
+      internalID: 1008998432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_59
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fa79e72251b2a41b78804d1836bfea
+      internalID: -286729625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2071c2bcae3ce354d8a792cadd2031fb
+      internalID: -635370812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b1cf8aae3ac2748ad22e9ff6aed7e4
+      internalID: 1393127974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_62
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5f693dbb58c2241975398e06b5af16
+      internalID: -701683302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_63
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f42b5b4dff4a1478984935422c88b7
+      internalID: -1902551222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312214847396f9c47b6dd50a0641ca61
+      internalID: 547833451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_65
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f455b4c8e3d30674f90771ca737af4e1
+      internalID: 1337336313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_66
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccdcfd86d36b0042bfb13dc60762dc4
+      internalID: 928851767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_67
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500ca5627be517544800936ea662a7c3
+      internalID: 249158232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_68
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a7cc39f61670c46a7424b5bcfef982
+      internalID: -415804893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon Deck Card Sheet V1.2_69
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3d09dde231b2b4fb9e65ce78f68888
+      internalID: -455627426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dragon Deck Card Sheet V1.2_28: -445538310
+      Dragon Deck Card Sheet V1.2_22: 1945396423
+      Dragon Deck Card Sheet V1.2_4: -1374402323
+      Dragon Deck Card Sheet V1.2_40: 1144086822
+      Dragon Deck Card Sheet V1.2_8: -1360849557
+      Dragon Deck Card Sheet V1.2_25: -662003693
+      Dragon Deck Card Sheet V1.2_2: 2038072777
+      Dragon Deck Card Sheet V1.2_5: -1435652448
+      Dragon Deck Card Sheet V1.2_12: 759875444
+      Dragon Deck Card Sheet V1.2_29: -2097603256
+      Dragon Deck Card Sheet V1.2_36: 2119076065
+      Dragon Deck Card Sheet V1.2_16: -271113148
+      Dragon Deck Card Sheet V1.2_19: 645948503
+      Dragon Deck Card Sheet V1.2_27: 38370060
+      Dragon Deck Card Sheet V1.2_14: 1728939138
+      Dragon Deck Card Sheet V1.2_53: 2105587733
+      Dragon Deck Card Sheet V1.2_63: -1902551222
+      Dragon Deck Card Sheet V1.2_59: -286729625
+      Dragon Deck Card Sheet V1.2_64: 547833451
+      Dragon Deck Card Sheet V1.2_24: -1812338077
+      Dragon Deck Card Sheet V1.2_60: -635370812
+      Dragon Deck Card Sheet V1.2_32: -1707659076
+      Dragon Deck Card Sheet V1.2_7: 563725369
+      Dragon Deck Card Sheet V1.2_49: -1224335917
+      Dragon Deck Card Sheet V1.2_37: 638470756
+      Dragon Deck Card Sheet V1.2_0: 607194398
+      Dragon Deck Card Sheet V1.2_50: 197057494
+      Dragon Deck Card Sheet V1.2_11: 1252359042
+      Dragon Deck Card Sheet V1.2_3: -1135614726
+      Dragon Deck Card Sheet V1.2_46: 1465494249
+      Dragon Deck Card Sheet V1.2_21: 132173871
+      Dragon Deck Card Sheet V1.2_54: -982489842
+      Dragon Deck Card Sheet V1.2_34: 526159136
+      Dragon Deck Card Sheet V1.2_44: -640905494
+      Dragon Deck Card Sheet V1.2_39: 1761339734
+      Dragon Deck Card Sheet V1.2_6: -760072536
+      Dragon Deck Card Sheet V1.2_51: 46679183
+      Dragon Deck Card Sheet V1.2_10: -19105149
+      Dragon Deck Card Sheet V1.2_55: 1463678073
+      Dragon Deck Card Sheet V1.2_9: 1818714871
+      Dragon Deck Card Sheet V1.2_38: 630692648
+      Dragon Deck Card Sheet V1.2_33: 1710712689
+      Dragon Deck Card Sheet V1.2_68: -415804893
+      Dragon Deck Card Sheet V1.2_66: 928851767
+      Dragon Deck Card Sheet V1.2_45: 763639459
+      Dragon Deck Card Sheet V1.2_58: 1008998432
+      Dragon Deck Card Sheet V1.2_30: -3924921
+      Dragon Deck Card Sheet V1.2_47: -593848069
+      Dragon Deck Card Sheet V1.2_65: 1337336313
+      Dragon Deck Card Sheet V1.2_41: -569355159
+      Dragon Deck Card Sheet V1.2_13: 1480391557
+      Dragon Deck Card Sheet V1.2_69: -455627426
+      Dragon Deck Card Sheet V1.2_67: 249158232
+      Dragon Deck Card Sheet V1.2_56: -1171554255
+      Dragon Deck Card Sheet V1.2_20: -1075423958
+      Dragon Deck Card Sheet V1.2_23: 354172723
+      Dragon Deck Card Sheet V1.2_61: 1393127974
+      Dragon Deck Card Sheet V1.2_62: -701683302
+      Dragon Deck Card Sheet V1.2_1: 1815650483
+      Dragon Deck Card Sheet V1.2_26: 439486787
+      Dragon Deck Card Sheet V1.2_35: 749565782
+      Dragon Deck Card Sheet V1.2_57: 1390101484
+      Dragon Deck Card Sheet V1.2_52: -390590385
+      Dragon Deck Card Sheet V1.2_15: 1240521917
+      Dragon Deck Card Sheet V1.2_43: 1121067316
+      Dragon Deck Card Sheet V1.2_17: 620832742
+      Dragon Deck Card Sheet V1.2_18: -115185459
+      Dragon Deck Card Sheet V1.2_48: -220915077
+      Dragon Deck Card Sheet V1.2_31: 650804697
+      Dragon Deck Card Sheet V1.2_42: -424408761
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

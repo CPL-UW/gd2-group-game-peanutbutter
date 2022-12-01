@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: 6faf129a30aab1a46a01a79fafb2490c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57a2417e6921d54b9f549abd59d9c04
+      internalID: -438855187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443a06a688e19f34abde768014e3ebcb
+      internalID: -1078620737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69740a0ca2dca4e42978313c63e8cf07
+      internalID: -330952184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b742e1f4179c5a24cab94e6a3978e154
+      internalID: -1783016319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c0142a74bc9ab49a117aab3e2da242
+      internalID: 1312125849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2729ddea8d8e5cc4faa534bc76f473c2
+      internalID: 1428312422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_6
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610a94763c77c2409d55fa3072e43b3
+      internalID: 959393167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90939df1c32e22e4fbeb5d1e9727b20e
+      internalID: 336398075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_8
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd766fc746aa6a4439ba90f22c21d960
+      internalID: -1409746758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_9
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 3510.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab4144a87f9eab4eaa20022b597e863
+      internalID: -1975731666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d465ef693941d1c44b3b1df7ef1f1d84
+      internalID: 1409900976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf5aebc4fdb4e4458fe3b0526d3a769
+      internalID: 1503197560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c623ac46f8d2ed342960b9199828305f
+      internalID: 859858824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b443298bbea49c044880a7d98a9e4781
+      internalID: -1462367432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e714f2d73529444931abc5033483ae
+      internalID: -425464393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_15
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f238a4d3d619e40a2b1707eabddcf7
+      internalID: -660427407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_16
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf78779998cfc24a8490ca58f821cae
+      internalID: -1388883632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_17
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7509910e5c762c45b24d28f518d2cac
+      internalID: 1688178029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_18
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643d796263874b0409c27df3f43337fa
+      internalID: 149075303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_19
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2925.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7286b696e5292e4eaa4b515dd1a35a0
+      internalID: 1048892270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62702dd795d1d834384823aa81744014
+      internalID: -277738064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8cd0acb824b234eb9d1efac4881545
+      internalID: -561324129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd040d374c4fe9e4db81c09284ae8a79
+      internalID: -70023076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41e2040c7326374ba0ffe8e8fc4b458
+      internalID: -1057201036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba09f3e545fa994ba3889320282d722
+      internalID: -1169513043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_25
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f18aacd4e502344a9f42ec2eb1f500
+      internalID: -2016944657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_26
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734ce380354e9b44db7415a30706cedc
+      internalID: -1245052111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_27
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2767653a46a3a0542b81ad230098f82f
+      internalID: 731093268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_28
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f9063e974c0714e951a3cfd5ed9f3f
+      internalID: -493301068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_29
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 2340.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483f93e9d97a0e94c8b3dce1d13215ae
+      internalID: -686953000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4776250c41366ea418194ae50a4683a6
+      internalID: -2126722339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17451d2b5e86b7d4a82881fdcb2c2b78
+      internalID: 1450201462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7e1bc9e80d9a42a28b833848f19e2
+      internalID: -2019727938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3e3bfa7714d8e45ab72893f44960c2
+      internalID: 104291331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc6b677251fa2847b354d83f3a06390
+      internalID: 1622724467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_35
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8490428c02fd63c469d7b8647435f4e2
+      internalID: 1448815649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_36
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe35d005c5691fa469941f0c90be2413
+      internalID: -553614040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_37
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1a57bb377553449b7ab85abaf65b75
+      internalID: -1826520152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_38
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa8ce0a4e0d325408e61a85aedd06ae
+      internalID: 322726884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_39
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1755.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1983886f2d7f828438904c37bfc80896
+      internalID: 1179823163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623528aa425d1984399608a3064688b7
+      internalID: 919354493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1d49fed61e2e64a886c6b7c36950ec
+      internalID: 944156780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8531dcafed9fd4ca1b503b952386f6
+      internalID: 780475319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc7f48cd01e4a04ab192825de1b2615
+      internalID: 2058869384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e34e1dbfa7cbe44a3692e10f0fcac3
+      internalID: 312198239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_45
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ddbde621c516449a57545ca01254df
+      internalID: -1337190477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_46
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d93a4437488cf45becdb9aa3ead518
+      internalID: -1933885561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_47
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa2571d97b70384ba748a725d903b63
+      internalID: -1497930968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_48
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b0758ec6875fb40ad3b7e7648de655
+      internalID: -1351873086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_49
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1170.8572
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c33083e5c6380c4bad128cac7e38e64
+      internalID: -1049032075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4823e0b0be5319541803597682ff69cc
+      internalID: 1291753602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fe9ee92e3721640b769d63812e6987
+      internalID: 323205363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317f19763c64b4542be77601245650e2
+      internalID: -952075556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1be21753391524fa5692e5499ff34c
+      internalID: 714695626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43468350442f7c14dbee17f093a1e51a
+      internalID: 187636608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_55
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01120f8e4d12acf4ba8b9f3f617fa1b1
+      internalID: 1395378053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_56
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d09918f691fc949b5661c5836e3974
+      internalID: -1434369795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_57
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13f483dfb8b98349892a9acdb915d07
+      internalID: -554967363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_58
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad78491104e26a4d9f361617547be42
+      internalID: -2069828078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_59
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 585.8571
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54357ecca7158dc4ea82167b676486b2
+      internalID: 77919531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e97a620b79cdb41a20033208ceb9cd
+      internalID: 522655066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258fe60106c14444d9b6a62b5c0db420
+      internalID: -588339818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_62
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf1672758f03cc4fa45ad3edfad706f
+      internalID: -319837499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_63
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d431647de5bd8864fba8ef09c59f1ecc
+      internalID: 170848056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d855b508820c484fa475fee5f995012
+      internalID: -2129210797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_65
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357dfbe61221bcb46a000d5bedac18b0
+      internalID: 1957672198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_66
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d423d42082bc9f44b33567922d18b9b
+      internalID: -1873916333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_67
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8732f8efb8179478a7f455b0cb2061
+      internalID: 507510321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_68
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7849f3c47f91c0d41a92270f1e55adf1
+      internalID: -320308712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wizard Deck Card Sheet V1.2_69
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 0.8571167
+        width: 409.6
+        height: 585.1429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46bb2f4f51d8794b8bc0beed51701f7
+      internalID: -1471228137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wizard Deck Card Sheet V1.2_16: -1388883632
+      Wizard Deck Card Sheet V1.2_6: 959393167
+      Wizard Deck Card Sheet V1.2_49: -1049032075
+      Wizard Deck Card Sheet V1.2_65: 1957672198
+      Wizard Deck Card Sheet V1.2_46: -1933885561
+      Wizard Deck Card Sheet V1.2_36: -553614040
+      Wizard Deck Card Sheet V1.2_41: 944156780
+      Wizard Deck Card Sheet V1.2_61: -588339818
+      Wizard Deck Card Sheet V1.2_20: -277738064
+      Wizard Deck Card Sheet V1.2_39: 1179823163
+      Wizard Deck Card Sheet V1.2_14: -425464393
+      Wizard Deck Card Sheet V1.2_38: 322726884
+      Wizard Deck Card Sheet V1.2_43: 2058869384
+      Wizard Deck Card Sheet V1.2_26: -1245052111
+      Wizard Deck Card Sheet V1.2_23: -1057201036
+      Wizard Deck Card Sheet V1.2_54: 187636608
+      Wizard Deck Card Sheet V1.2_21: -561324129
+      Wizard Deck Card Sheet V1.2_1: -1078620737
+      Wizard Deck Card Sheet V1.2_27: 731093268
+      Wizard Deck Card Sheet V1.2_47: -1497930968
+      Wizard Deck Card Sheet V1.2_53: 714695626
+      Wizard Deck Card Sheet V1.2_0: -438855187
+      Wizard Deck Card Sheet V1.2_34: 1622724467
+      Wizard Deck Card Sheet V1.2_50: 1291753602
+      Wizard Deck Card Sheet V1.2_57: -554967363
+      Wizard Deck Card Sheet V1.2_59: 77919531
+      Wizard Deck Card Sheet V1.2_44: 312198239
+      Wizard Deck Card Sheet V1.2_2: -330952184
+      Wizard Deck Card Sheet V1.2_12: 859858824
+      Wizard Deck Card Sheet V1.2_56: -1434369795
+      Wizard Deck Card Sheet V1.2_8: -1409746758
+      Wizard Deck Card Sheet V1.2_60: 522655066
+      Wizard Deck Card Sheet V1.2_3: -1783016319
+      Wizard Deck Card Sheet V1.2_67: 507510321
+      Wizard Deck Card Sheet V1.2_19: 1048892270
+      Wizard Deck Card Sheet V1.2_13: -1462367432
+      Wizard Deck Card Sheet V1.2_5: 1428312422
+      Wizard Deck Card Sheet V1.2_64: -2129210797
+      Wizard Deck Card Sheet V1.2_33: 104291331
+      Wizard Deck Card Sheet V1.2_37: -1826520152
+      Wizard Deck Card Sheet V1.2_51: 323205363
+      Wizard Deck Card Sheet V1.2_62: -319837499
+      Wizard Deck Card Sheet V1.2_52: -952075556
+      Wizard Deck Card Sheet V1.2_17: 1688178029
+      Wizard Deck Card Sheet V1.2_40: 919354493
+      Wizard Deck Card Sheet V1.2_69: -1471228137
+      Wizard Deck Card Sheet V1.2_15: -660427407
+      Wizard Deck Card Sheet V1.2_48: -1351873086
+      Wizard Deck Card Sheet V1.2_35: 1448815649
+      Wizard Deck Card Sheet V1.2_24: -1169513043
+      Wizard Deck Card Sheet V1.2_30: -2126722339
+      Wizard Deck Card Sheet V1.2_58: -2069828078
+      Wizard Deck Card Sheet V1.2_28: -493301068
+      Wizard Deck Card Sheet V1.2_7: 336398075
+      Wizard Deck Card Sheet V1.2_25: -2016944657
+      Wizard Deck Card Sheet V1.2_42: 780475319
+      Wizard Deck Card Sheet V1.2_9: -1975731666
+      Wizard Deck Card Sheet V1.2_31: 1450201462
+      Wizard Deck Card Sheet V1.2_55: 1395378053
+      Wizard Deck Card Sheet V1.2_63: 170848056
+      Wizard Deck Card Sheet V1.2_11: 1503197560
+      Wizard Deck Card Sheet V1.2_22: -70023076
+      Wizard Deck Card Sheet V1.2_18: 149075303
+      Wizard Deck Card Sheet V1.2_4: 1312125849
+      Wizard Deck Card Sheet V1.2_32: -2019727938
+      Wizard Deck Card Sheet V1.2_10: 1409900976
+      Wizard Deck Card Sheet V1.2_45: -1337190477
+      Wizard Deck Card Sheet V1.2_68: -320308712
+      Wizard Deck Card Sheet V1.2_66: -1873916333
+      Wizard Deck Card Sheet V1.2_29: -686953000
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
