@@ -236,7 +236,7 @@ public class UserInput_SP : MonoBehaviour
             P1CombatColor(selectedCard);
             ComputerCombatAI();
         }
-        else if (CheckPlacement(false))
+        else if ( (p2PlayedCards.Count>0) && CheckPlacement(false) )
         {
             isP1Turn = !isP1Turn;
             P2CombatColor(selectedCard);
@@ -264,6 +264,7 @@ public class UserInput_SP : MonoBehaviour
         foreach (GameObject card in p2PlayedCards)
         {
             game.p2HandCards.Remove(card);
+            game.computerHand.Remove(card.name);
             card.GetComponent<Selectable>().faceUp = true;
         }
         // ChangeTurn();
