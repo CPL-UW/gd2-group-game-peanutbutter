@@ -19,7 +19,7 @@ public class UpdateSprite_SP : MonoBehaviour
         List<string> computerDeck = Game_SP.GenerateDeck(false);
         game = FindObjectOfType<Game_SP>();
         userInput = FindObjectOfType<UserInput_SP>();
-        Vector3 scale = new Vector3(0.33f, 0.33f, 1.0f);
+        Vector3 scale = new Vector3(0.25f, 0.25f, 1.0f);
 
         int i = 0;
         foreach (string card in playerDeck)

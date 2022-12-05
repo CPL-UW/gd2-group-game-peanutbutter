@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using TMPro;
 
@@ -13,6 +14,9 @@ public class UserInput_SP : MonoBehaviour
 
     private List<GameObject> p1PlayedCards;
     private List<GameObject> p2PlayedCards;
+
+    public Button endTurnButton;
+    public Button nextTurnButton;
 
     public static bool isP1Turn = true;
     private GameObject[,] p1CombatPos;
@@ -42,6 +46,9 @@ public class UserInput_SP : MonoBehaviour
 
         p1Prev = new List<Vector3>();
         p2Prev = new List<Vector3>();
+
+        endTurnButton.interactable = true;
+        nextTurnButton.interactable = false;
     }
 
     // Update is called once per frame
@@ -222,26 +229,37 @@ public class UserInput_SP : MonoBehaviour
         }
     }
 
-    public void DiscardCards()
+    public void NextTurn()
     {
-
+        if ((p2PlayedCards.Count > 0) && CheckPlacement(false))
+        {
+            selectedCard = null;
+            isP1Turn = !isP1Turn;
+            endTurnButton.interactable = true;
+            nextTurnButton.interactable = false;
+            P2CombatColor(selectedCard);
+            EndTurn();
+        }
     }
 
     public void ChangeTurn()
     {
-        selectedCard = null;
         if (isP1Turn && (p1PlayedCards.Count>0) && CheckPlacement())
         {
+            selectedCard = null;
             isP1Turn = !isP1Turn;
+            endTurnButton.interactable = false;
+            nextTurnButton.interactable = true;
             P1CombatColor(selectedCard);
             ComputerCombatAI();
         }
-        else if ( (p2PlayedCards.Count>0) && CheckPlacement(false) )
+        /* else if ( (p2PlayedCards.Count>0) && CheckPlacement(false) )
         {
             isP1Turn = !isP1Turn;
             P2CombatColor(selectedCard);
             EndTurn();
         }
+        */
     }
 
     private void ComputerCombatAI()
