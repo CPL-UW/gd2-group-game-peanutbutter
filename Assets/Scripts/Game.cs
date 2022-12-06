@@ -88,6 +88,20 @@ public class Game : MonoBehaviour
             scoreManager.ResetScore();
             RestartGame();
         }
+        if (playerDeck.Count < 5)
+        {
+            foreach (string card in p1Discard)
+            {
+                playerDeck.Add(card);
+            }
+        }
+        if (computerDeck.Count < 5)
+        {
+            foreach (string card in p2Discard)
+            {
+                playerDeck.Add(card);
+            }
+        }
     }
 
     public void RestartGame()

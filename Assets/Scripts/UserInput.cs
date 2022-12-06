@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using TMPro;
 
@@ -15,6 +16,11 @@ public class UserInput : MonoBehaviour
     private List<GameObject> p1PlayedCards;
     private List<GameObject> p2PlayedCards;
 
+    public Button p1EndTurnButton;
+    public Button p1NextTurnButton;
+    public Button p2EndTurnButton;
+    public Button p2NextTurnButton;
+
     public static bool isP1Turn = true;
     private GameObject[,] p1CombatPos;
     private GameObject[,] p2CombatPos;
@@ -23,6 +29,22 @@ public class UserInput : MonoBehaviour
     private List<Vector3> p2Prev;
 
     public TextMeshProUGUI roundWinText;
+
+    public TextMeshProUGUI p1LeftText;
+    public TextMeshProUGUI p1CentText;
+    public TextMeshProUGUI p1RighText;
+    public TextMeshProUGUI p1OpponentLeftText;
+    public TextMeshProUGUI p1OpponentCentText;
+    public TextMeshProUGUI p1OpponentRighText;
+    public TextMeshProUGUI p1RuleText;
+
+    public TextMeshProUGUI p2LeftText;
+    public TextMeshProUGUI p2CentText;
+    public TextMeshProUGUI p2RighText;
+    public TextMeshProUGUI p2OpponentLeftText;
+    public TextMeshProUGUI p2OpponentCentText;
+    public TextMeshProUGUI p2OpponentRighText;
+    public TextMeshProUGUI p2RuleText;
 
     [SerializeField] public Animator textFade;
 
@@ -44,6 +66,12 @@ public class UserInput : MonoBehaviour
 
         p1Prev = new List<Vector3>();
         p2Prev = new List<Vector3>();
+
+        p1EndTurnButton.interactable = true;
+        p1NextTurnButton.interactable = false;
+
+        p2EndTurnButton.interactable = true;
+        p2NextTurnButton.interactable = false;
     }
 
     // Update is called once per frame
@@ -57,7 +85,9 @@ public class UserInput : MonoBehaviour
         else
         {
             P2CombatColor(selectedCard);
-        }    
+        }
+        UpdateP1Text();
+        UpdateP2Text();
     }
 
     void GetMouseClick()
@@ -314,7 +344,7 @@ public class UserInput : MonoBehaviour
         }
     }
 
-    public void DiscardCards()
+    public void NextTurn()
     {
         if (toggleCamera.p1Camera.activeSelf)
         {
@@ -324,11 +354,6 @@ public class UserInput : MonoBehaviour
         {
             
         }
-    }
-
-    void DiscardCards(GameObject selected, bool isP1 = true)
-    {
-        
     }
 
     public void ChangeTurn()
@@ -441,6 +466,108 @@ public class UserInput : MonoBehaviour
 
         selectedCard = null;
         game.StartOfTurn();
+    }
+
+    void UpdateP1Text()
+    {
+        double topLeft = GetValue(p1CombatPos[0, 0]);
+        double botLeft = GetValue(p1CombatPos[1, 0]);
+        double topCent = GetValue(p1CombatPos[0, 1]);
+        double botCent = GetValue(p1CombatPos[1, 1]);
+        double topRigh = GetValue(p1CombatPos[0, 2]);
+        double botRigh = GetValue(p1CombatPos[1, 2]);
+
+        if (topLeft == 14)
+        {
+            topLeft = 0;
+        }
+        if (botLeft == 14)
+        {
+            botLeft = 0;
+        }
+        if (topCent == 14)
+        {
+            topCent = 0;
+        }
+        if (botCent == 14)
+        {
+            botCent = 0;
+        }
+        if (topRigh == 14)
+        {
+            topRigh = 0;
+        }
+        if (botRigh == 14)
+        {
+            botRigh = 0;
+        }
+        if (botLeft > 10)
+        {
+            botLeft = botLeft / 2;
+        }
+        if (botCent > 10)
+        {
+            botCent = botCent / 2;
+        }
+        if (botRigh > 10)
+        {
+            botRigh = botRigh / 2;
+        }
+
+        p1LeftText.text = (topLeft + botLeft).ToString();
+        p1CentText.text = (topCent + botCent).ToString();
+        p1RighText.text = (topRigh + botRigh).ToString();
+    }
+
+    void UpdateP2Text()
+    {
+        double topLeft = GetValue(p2CombatPos[0, 0]);
+        double botLeft = GetValue(p2CombatPos[1, 0]);
+        double topCent = GetValue(p2CombatPos[0, 1]);
+        double botCent = GetValue(p2CombatPos[1, 1]);
+        double topRigh = GetValue(p2CombatPos[0, 2]);
+        double botRigh = GetValue(p2CombatPos[1, 2]);
+
+        if (topLeft == 14)
+        {
+            topLeft = 0;
+        }
+        if (botLeft == 14)
+        {
+            botLeft = 0;
+        }
+        if (topCent == 14)
+        {
+            topCent = 0;
+        }
+        if (botCent == 14)
+        {
+            botCent = 0;
+        }
+        if (topRigh == 14)
+        {
+            topRigh = 0;
+        }
+        if (botRigh == 14)
+        {
+            botRigh = 0;
+        }
+        if (botLeft > 10)
+        {
+            botLeft = botLeft / 2;
+        }
+        if (botCent > 10)
+        {
+            botCent = botCent / 2;
+        }
+        if (botRigh > 10)
+        {
+            botRigh = botRigh / 2;
+        }
+
+        p2LeftText.text = (topLeft + botLeft).ToString();
+        p2CentText.text = (topCent + botCent).ToString();
+        p2RighText.text = (topRigh + botRigh).ToString();
     }
 
     int GetValue(GameObject card)
