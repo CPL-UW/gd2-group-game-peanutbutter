@@ -224,6 +224,7 @@ public class UserInput : MonoBehaviour
         else
         {
             selectedCard = selected;
+            p1RuleText.text = selected.GetComponent<Selectable>().rule.ToString();
         }
     }
 
@@ -310,6 +311,7 @@ public class UserInput : MonoBehaviour
         else
         {
             selectedCard = selected;
+            p2RuleText.text = selected.GetComponent<Selectable>().rule.ToString();
         }
     }
 
@@ -348,18 +350,27 @@ public class UserInput : MonoBehaviour
     {
         if (toggleCamera.p1Camera.activeSelf)
         {
-
+            toggleCamera.ToggleP2Camera();
         }
         else if (toggleCamera.p2Camera.activeSelf)
         {
-            
+            toggleCamera.ToggleP1Camera();
+
         }
+        p1EndTurnButton.interactable = true;
+        p1NextTurnButton.interactable = false;
+
+        p2EndTurnButton.interactable = true;
+        p2NextTurnButton.interactable = false;
+
+        selectedCard = null;
+        EndTurn();
     }
 
     public void ChangeTurn()
     {
         selectedCard = null;
-        if (isP1Turn && (p1PlayedCards.Count>0) && CheckPlacement())
+        if (toggleCamera.p1Camera.activeSelf && (p1PlayedCards.Count>0) && CheckPlacement())
         {
             foreach (GameObject card in game.p1HandCards)
             {
@@ -377,12 +388,20 @@ public class UserInput : MonoBehaviour
             isP1Turn = !isP1Turn;
             P1CombatColor(selectedCard);
         }
-        else if ( (p2PlayedCards.Count > 0) && CheckPlacement(false) )
+        else if (toggleCamera.p2Camera.activeSelf && (p2PlayedCards.Count > 0) && CheckPlacement(false) )
         {
-            toggleCamera.ToggleP1Camera();
+            //toggleCamera.ToggleP1Camera();
             P2CombatColor(selectedCard);
-            EndTurn();
             isP1Turn = !isP1Turn;
+            p2EndTurnButton.interactable = false;
+            p2NextTurnButton.interactable = true;
+            p2OpponentLeftText.text = p1LeftText.text;
+            p2OpponentCentText.text = p1CentText.text;
+            p2OpponentRighText.text = p1RighText.text;
+            foreach (GameObject card in p1PlayedCards)
+            {
+                card.GetComponent<Selectable>().faceUp = true;
+            }
         }
     }
     bool CheckPlacement(bool isP1 = true)

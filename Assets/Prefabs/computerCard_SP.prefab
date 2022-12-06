@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7061768444301160776}
   - component: {fileID: 1264649040648442986}
   - component: {fileID: 7390148150553048574}
-  - component: {fileID: -3903484929450235406}
+  - component: {fileID: 8273676570298942794}
   m_Layer: 0
-  m_Name: computerCard
+  m_Name: computerCard_SP
   m_TagString: ComputerCard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-3903484929450235406
+--- !u!114 &8273676570298942794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,8 +160,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2596004720038645927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 635afca6f4854ed428a3621fffed6d89, type: 3}
+  m_Script: {fileID: 11500000, guid: 02a2d5b773ba9934b85257fb5fe36744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardFace: {fileID: 0}
-  cardBack: {fileID: 187636608, guid: 6faf129a30aab1a46a01a79fafb2490c, type: 3}
+  cardBack: {fileID: -1906868375, guid: 8ca29560ec799534496f6f1b0f3297e8, type: 3}
