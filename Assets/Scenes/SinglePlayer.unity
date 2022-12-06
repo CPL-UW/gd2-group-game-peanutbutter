@@ -2046,27 +2046,37 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Special Cards\r\n- Aces in the front or back row beat face cards in the
-    front row. However, if there are no face cards in front of the ace it is worth
-    1.\r\n- Red Joker wins a column if the opponent's total is odd in the opposite
-    column.\r\n- Black Joker wins a column if the opponent's total is even in the
-    opposite column.\r\n- Certain suits beat other suits and increase the value of
-    a card by +2\r\n(Spades beat Diamonds, Diamonds beat Clubs, Clubs beat Hearts,
-    Hearts beat Spades) This interaction is between the two front cards.\r\n\r\nTies\r\n-
-    If a tie occurs, each player totals the value of all the cards they have on the
-    field. The player with the higher total wins the tiebreaker and wins the round.\r\n\r\nHit
-    Points\r\n- Players may choose to not place any cards in a column.\r\n- If you
-    play cards in a column but the opposing player does not play a card in the opposite
-    column, this is known as a direct attack. Subtract the total of your cards in
-    the column from their hit points.\r\n- Each suit also has a certain bonus effect
-    in a direct attack based on the card in front.\r\n\t- Spades and Diamonds deal
-    double damage\r\n\t- Clubs allow the attacking player to start with 8 cards instead
-    of 6 the next round\r\n\t- Hearts heal attacking player's HP equal to the damage
-    dealt (Cannot exceed 50)\r\n\t- Jokers deal half of the opponent's current HP
-    rounded down\r\n"
+  m_text: 'Special Cards
+
+
+
+    Aces
+
+    - Aces in the front or back row beat face
+    cards in the front row. However, if there are no face cards in front of the ace
+    it is worth 1.
+
+
+
+    Jokers
+
+    - Red Joker wins a column if the opponent''s
+    total is odd in the opposite column.
+
+    - Black Joker wins a column if the
+    opponent''s total is even in the opposite column.
+
+
+
+    Suit Advantage
+
+    -
+    Certain suits beat other suits and increase the value of a card by +2
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
+  m_sharedMaterial: {fileID: 2603183464218083036, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2090,14 +2100,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2567,30 +2577,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "How to Win Game: Win 7 rounds or reduce opponents hit points to 0.\r\nHow
-    to Win Round: Win 2 out of the 3 columns\r\n\r\nSetup Phase\r\n- Each player
-    starts with 50HP\r\n- Each player has a 54 card deck and draws until they have
-    6 cards in their hand.\r\n- Players may discard 2 cards from their hand and draw
-    1 new card.\r\n\r\nSummoning Phase\r\n- Place up to 5 cards face down in your
-    2x3 play field. Only one card can be played per square. (Left click a card to
-    select it and left click a space to place it)\r\n- Each card's value is associated
-    with the number on it. Jacks are worth 11, Queens 12, Kings 13, Aces 1.\r\n-
-    Any value card can be played in the front. Cards with a value of 5 or less can
-    be played in the back row.\r\n- Face cards can only be played in the back row
-    if they are behind another face card. Face cards in the back row are then equal
-    to half of their value rounded down. \r\n(Jack = 5, Queen = 6, King = 7)\r\n-
-    Players may rearrange their cards once during the summoning phase. The losing
-    player moves last. (If tied player 2 moves last)\r\n- Once both players finish
-    placing cards the duel phase begins.\r\n\r\nDuel Phase\r\n- Both players flip
-    all of their played cards over.\r\n- Add up the values in each column and compare
-    it to your opponents column on the opposite side. \r\n- If your column has the
-    higher value or wins based on special card interactions (more about them below)
-    you win the column.\r\n- The player who wins 2 columns wins the round.\r\n- If
-    a column wins do not discard the front card. Discard all back cards or cards
-    in a losing column and start again with the setup phase.\r\n"
+  m_text: "How to Win Game: Win 7 rounds\r\nHow to Win Round: Win 2 out of the 3
+    columns\r\n\r\nSetup Phase\r\n- Each player starts a round with 6 cards\r\n\r\nSummoning
+    Phase\r\n- Place up to 5 cards face down in your 2x3 play field. Only one card
+    can be played per square. (Left click a card to select it and left click a space
+    to place it)\r\n- Each card's value is associated with the number on it. \r\n\r\nJacks
+    are worth 11, Queens 12, Kings 13, Aces 1.\r\n\r\n- Any value card can be played
+    in the front. Face cards or cards with a value of 5 or less can be played in
+    the back row.\r\n- Face cards in the back row are equal to half of their value\r\n\r\n(Jack
+    = 5, Queen = 6, King = 7)\r\n\r\nDuel Phase\r\n- Both players flip all of their
+    played cards over.\r\n- Add up the values in each column and compare it to your
+    opponents column on the opposite side. \r\n- If your column has the higher value
+    or wins based on special card interactions you win the column.\r\n- The player
+    who wins 2 or more columns wins the round.\r\n- Whoever wins 7 rounds first wins
+    the game\r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
+  m_sharedMaterial: {fileID: 2603183464218083036, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2614,14 +2617,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3486,8 +3489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6.260002, y: 0}
+  m_SizeDelta: {x: 12.52, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001428199
 MonoBehaviour:
@@ -3511,8 +3514,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next Turn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
+  m_sharedMaterial: {fileID: 2603183464218083036, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3536,8 +3539,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4779,8 +4782,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
+  m_sharedMaterial: {fileID: 2603183464218083036, guid: db4ffc18e3823034b85aea38040b459c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
