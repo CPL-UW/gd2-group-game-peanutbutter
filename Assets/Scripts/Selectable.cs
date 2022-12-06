@@ -7,6 +7,7 @@ public class Selectable : MonoBehaviour
     public bool faceUp = false;
     public string suit;
     public int value;
+    public string rule;
 
     private string valueString;
     
@@ -27,60 +28,82 @@ public class Selectable : MonoBehaviour
             if (valueString == "A")
             {
                 value = 1;
+                rule += "+1 Value";
+                rule += " & Beats Face Cards Placed in Front Row";
             }
             if (valueString == "1")
             {
                 value = 2;
+                rule += "+2 Value";
             }
             if (valueString == "2")
             {
                 value = 3;
+                rule += "+3 Value";
             }
             if (valueString == "3")
             {
                 value = 4;
+                rule += "+4 Value";
             }
             if (valueString == "4")
             {
                 value = 5;
+                rule += "+5 Value";
             }
             if (valueString == "5")
             {
                 value = 6;
+                rule += "+6 Value";
             }
             if (valueString == "6")
             {
                 value = 7;
+                rule += "+7 Value";
             }
             if (valueString == "7")
             {
                 value = 8;
+                rule += "+8 Value";
             }
             if (valueString == "8")
             {
                 value = 9;
+                rule += "+9 Value";
             }
             if (valueString == "9")
             {
                 value = 10;
+                rule += "+10 Value";
             }
             if (valueString == "J")
             {
                 value = 11;
+                rule += "+11 Value";
+                rule += " & is Face Card";
+                rule += " & is Half Value in Back Row";
             }
             if (valueString == "Q")
             {
                 value = 12;
+                rule += "+12 Value";
+                rule += " & is Face Card";
+                rule += " & is Half Value in Back Row";
             }
             if (valueString == "K")
             {
                 value = 13;
+                rule += "+13 Value";
+                rule += " & is Face Card";
+                rule += " & is Half Value in Back Row";
             }
             if (valueString == "O")
             {
                 value = 14;
+                rule += "+0 Value";
+                rule += " & if Red, Beats Opposing Odd Column, else loses";
+                rule += " & if Black, Beats Opposing Even Column, else loses";
             }
-            
         }
 
         // Set suit and values of computer cards

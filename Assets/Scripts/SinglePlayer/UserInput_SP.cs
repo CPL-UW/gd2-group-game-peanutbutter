@@ -27,6 +27,14 @@ public class UserInput_SP : MonoBehaviour
 
     public TextMeshProUGUI roundWinText;
 
+    public TextMeshProUGUI playerLeftText;
+    public TextMeshProUGUI playerCentText;
+    public TextMeshProUGUI playerRighText;
+    public TextMeshProUGUI computerLeftText;
+    public TextMeshProUGUI computerCentText;
+    public TextMeshProUGUI computerRighText;
+    public TextMeshProUGUI ruleText;
+
     [SerializeField] public Animator textFade;
 
     public AudioSource source;
@@ -62,7 +70,9 @@ public class UserInput_SP : MonoBehaviour
         else
         {
             P2CombatColor(selectedCard);
-        }    
+        }
+        UpdatePlayerText();
+        UpdateComputerText();
     }
 
     void GetMouseClick()
@@ -164,6 +174,7 @@ public class UserInput_SP : MonoBehaviour
         else
         {
             selectedCard = selected;
+            ruleText.text = selected.GetComponent<Selectable>().rule.ToString();
         }
     }
 
@@ -237,6 +248,11 @@ public class UserInput_SP : MonoBehaviour
             isP1Turn = !isP1Turn;
             endTurnButton.interactable = true;
             nextTurnButton.interactable = false;
+            foreach (GameObject card in p2PlayedCards)
+            {
+                // game.p2HandCards.Remove(card);
+                game.computerHand.Remove(card.name);
+            }
             P2CombatColor(selectedCard);
             EndTurn();
         }
@@ -253,13 +269,6 @@ public class UserInput_SP : MonoBehaviour
             P1CombatColor(selectedCard);
             ComputerCombatAI();
         }
-        /* else if ( (p2PlayedCards.Count>0) && CheckPlacement(false) )
-        {
-            isP1Turn = !isP1Turn;
-            P2CombatColor(selectedCard);
-            EndTurn();
-        }
-        */
     }
 
     private void ComputerCombatAI()
@@ -268,24 +277,21 @@ public class UserInput_SP : MonoBehaviour
         p2CombatPos[0, 2] = game.p2HandCards[0];
         p2PlayedCards.Add(game.p2HandCards[0]);
         game.p2HandCards[1].transform.position = game.p2BotRigh.transform.position - new Vector3(0, 0, 1);
-        p2CombatPos[1, 2] = game.p2HandCards[0];
+        p2CombatPos[1, 2] = game.p2HandCards[1];
         p2PlayedCards.Add(game.p2HandCards[1]);
         game.p2HandCards[2].transform.position = game.p2TopCent.transform.position - new Vector3(0, 0, 1);
-        p2CombatPos[0, 1] = game.p2HandCards[0];
+        p2CombatPos[0, 1] = game.p2HandCards[2];
         p2PlayedCards.Add(game.p2HandCards[2]);
         game.p2HandCards[3].transform.position = game.p2BotCent.transform.position - new Vector3(0, 0, 1);
-        p2CombatPos[1, 1] = game.p2HandCards[0];
+        p2CombatPos[1, 1] = game.p2HandCards[3];
         p2PlayedCards.Add(game.p2HandCards[3]);
         game.p2HandCards[4].transform.position = game.p2TopLeft.transform.position - new Vector3(0, 0, 1);
-        p2CombatPos[0, 0] = game.p2HandCards[0];
+        p2CombatPos[0, 0] = game.p2HandCards[4];
         p2PlayedCards.Add(game.p2HandCards[4]);
         foreach (GameObject card in p2PlayedCards)
         {
-            game.p2HandCards.Remove(card);
-            game.computerHand.Remove(card.name);
             card.GetComponent<Selectable>().faceUp = true;
         }
-        // ChangeTurn();
     }
 
     bool CheckPlacement(bool isP1 = true)
@@ -371,7 +377,7 @@ public class UserInput_SP : MonoBehaviour
         game.StartOfTurn();
     }
 
-    int GetValue(GameObject card)
+    double GetValue(GameObject card)
     {
         if (card)
         {
@@ -381,6 +387,108 @@ public class UserInput_SP : MonoBehaviour
         {
             return 0;
         }
+    }
+
+    void UpdatePlayerText()
+    {
+        double topLeft = GetValue(p1CombatPos[0, 0]);
+        double botLeft = GetValue(p1CombatPos[1, 0]);
+        double topCent = GetValue(p1CombatPos[0, 1]);
+        double botCent = GetValue(p1CombatPos[1, 1]);
+        double topRigh = GetValue(p1CombatPos[0, 2]);
+        double botRigh = GetValue(p1CombatPos[1, 2]);
+
+        if (topLeft == 14)
+        {
+            topLeft = 0;
+        }
+        if (botLeft == 14)
+        {
+            botLeft = 0;
+        }
+        if (topCent == 14)
+        {
+            topCent = 0;
+        }
+        if (botCent == 14)
+        {
+            botCent = 0;
+        }
+        if (topRigh == 14)
+        {
+            topRigh = 0;
+        }
+        if (botRigh == 14)
+        {
+            botRigh = 0;
+        }
+        if (botLeft > 10)
+        {
+            botLeft = botLeft / 2;
+        }
+        if (botCent > 10)
+        {
+            botCent = botCent / 2;
+        }
+        if (botRigh > 10)
+        {
+            botRigh = botRigh / 2;
+        }
+
+        playerLeftText.text = (topLeft+botLeft).ToString();
+        playerCentText.text = (topCent+botCent).ToString();
+        playerRighText.text = (topRigh+botRigh).ToString();
+    }
+
+    void UpdateComputerText()
+    {
+        double topLeft = GetValue(p2CombatPos[0, 0]);
+        double botLeft = GetValue(p2CombatPos[1, 0]);
+        double topCent = GetValue(p2CombatPos[0, 1]);
+        double botCent = GetValue(p2CombatPos[1, 1]);
+        double topRigh = GetValue(p2CombatPos[0, 2]);
+        double botRigh = GetValue(p2CombatPos[1, 2]);
+
+        if (topLeft == 14)
+        {
+            topLeft = 0;
+        }
+        if (botLeft == 14)
+        {
+            botLeft = 0;
+        }
+        if (topCent == 14)
+        {
+            topCent = 0;
+        }
+        if (botCent == 14)
+        {
+            botCent = 0;
+        }
+        if (topRigh == 14)
+        {
+            topRigh = 0;
+        }
+        if (botRigh == 14)
+        {
+            botRigh = 0;
+        }
+        if (botLeft > 10)
+        {
+            botLeft = botLeft / 2;
+        }
+        if (botCent > 10)
+        {
+            botCent = botCent / 2;
+        }
+        if (botRigh > 10)
+        {
+            botRigh = botRigh / 2;
+        }
+
+        computerLeftText.text = (topLeft + botLeft).ToString();
+        computerCentText.text = (topCent + botCent).ToString();
+        computerRighText.text = (topRigh + botRigh).ToString();
     }
 
     int[] CheckWinner() // Return 1 if p1 and 2 if p2 and 0 if tie
