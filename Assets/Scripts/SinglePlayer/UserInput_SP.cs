@@ -702,28 +702,28 @@ public class UserInput_SP : MonoBehaviour
 
         //// Aces (in front or back row) beat face cards in front rows
         // Player 1
-        if ( (p1TopLeft == 1 || p1BotLeft == 1) && p2TopRigh > 10 && leftColWinner == -1)
+        if ( (p1TopLeft == 1 || p1BotLeft == 1) && (p2TopRigh > 10) && (leftColWinner == -1) )
         {
             leftColWinner = 1;
         }
-        if ((p1TopCent == 1 || p1BotCent == 1) && p2TopCent > 10 && centColWinner == -1)
+        if ((p1TopCent == 1 || p1BotCent == 1) && (p2TopCent > 10) && (centColWinner == -1) )
         {
             centColWinner = 1;
         }
-        if ((p1TopRigh == 1 || p1BotRigh == 1) && p2TopLeft > 10 && righColWinner == -1)
+        if ((p1TopRigh == 1 || p1BotRigh == 1) && (p2TopLeft > 10) && (righColWinner == -1) )
         {
             righColWinner = 1;
         }
         // Player 2
-        if ((p2TopLeft == 1 || p2BotLeft == 1) && p1TopRigh > 10 && righColWinner == -1)
+        if ((p2TopLeft == 1 || p2BotLeft == 1) && (p1TopRigh > 10) && (righColWinner == -1) )
         {
             leftColWinner = 2;
         }
-        if ((p2TopCent == 1 || p2BotCent == 1) && p1TopCent > 10 && centColWinner == -1)
+        if ((p2TopCent == 1 || p2BotCent == 1) && (p1TopCent > 10) && (centColWinner == -1) )
         {
             centColWinner = 2;
         }
-        if ((p2TopRigh == 1 || p2BotRigh == 1) && p1TopLeft > 10 && leftColWinner == -1)
+        if ((p2TopRigh == 1 || p2BotRigh == 1) && (p1TopLeft > 10) && (leftColWinner == -1) )
         {
             righColWinner = 2;
         }
