@@ -73,6 +73,14 @@ public class UserInput_SP : MonoBehaviour
         }
         UpdatePlayerText();
         UpdateComputerText();
+        if (selectedCard)
+        {
+            ruleText.text = selectedCard.GetComponent<Selectable>().rule;
+        }
+        else
+        {
+            ruleText.text = "";
+        }
     }
 
     void GetMouseClick()
@@ -269,11 +277,83 @@ public class UserInput_SP : MonoBehaviour
             nextTurnButton.interactable = true;
             P1CombatColor(selectedCard);
             ComputerCombatAI();
+            foreach (GameObject card in p2PlayedCards)
+            {
+                card.GetComponent<Selectable>().faceUp = true;
+            }
         }
     }
 
     private void ComputerCombatAI()
     {
+        for (int i = 0; i < game.p2HandCards.Count-1; i++)
+        {
+            if ((game.p2HandCards[i].GetComponent<Selectable>().value < 6) ||
+                (game.p2HandCards[i].GetComponent<Selectable>().value > 10))
+            {
+                if (p2CombatPos[1, 0] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2BotLeft.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[1, 0] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                else if (p2CombatPos[1, 1] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2BotCent.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[1, 1] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                /*
+                else if (p2CombatPos[1, 2] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2BotRigh.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[1, 2] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                */
+                else if (p2CombatPos[0, 0] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopLeft.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 0] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                else if (p2CombatPos[0, 1] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopCent.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 1] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                else if (p2CombatPos[0, 2] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopRigh.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 2] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+            }
+            else
+            {
+                if (p2CombatPos[0, 0] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopLeft.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 0] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                else if (p2CombatPos[0, 1] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopCent.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 1] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+                else if (p2CombatPos[0, 2] == null)
+                {
+                    game.p2HandCards[i].transform.position = game.p2TopRigh.transform.position - new Vector3(0, 0, 1);
+                    p2CombatPos[0, 2] = game.p2HandCards[i];
+                    p2PlayedCards.Add(game.p2HandCards[i]);
+                }
+            }
+        }
+        
+        /*
         game.p2HandCards[0].transform.position = game.p2TopRigh.transform.position - new Vector3(0, 0, 1);
         p2CombatPos[0, 2] = game.p2HandCards[0];
         p2PlayedCards.Add(game.p2HandCards[0]);
@@ -289,10 +369,7 @@ public class UserInput_SP : MonoBehaviour
         game.p2HandCards[4].transform.position = game.p2TopLeft.transform.position - new Vector3(0, 0, 1);
         p2CombatPos[0, 0] = game.p2HandCards[4];
         p2PlayedCards.Add(game.p2HandCards[4]);
-        foreach (GameObject card in p2PlayedCards)
-        {
-            card.GetComponent<Selectable>().faceUp = true;
-        }
+        */
     }
 
     bool CheckPlacement(bool isP1 = true)
