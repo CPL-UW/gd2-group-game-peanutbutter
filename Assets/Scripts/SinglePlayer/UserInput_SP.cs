@@ -251,6 +251,7 @@ public class UserInput_SP : MonoBehaviour
             foreach (GameObject card in p2PlayedCards)
             {
                 // game.p2HandCards.Remove(card);
+                game.p2Discard.Add(card.name);
                 game.computerHand.Remove(card.name);
             }
             P2CombatColor(selectedCard);
