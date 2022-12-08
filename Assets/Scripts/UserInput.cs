@@ -70,8 +70,8 @@ public class UserInput : MonoBehaviour
         p1EndTurnButton.interactable = true;
         p1NextTurnButton.interactable = false;
 
-        p2EndTurnButton.interactable = true;
-        p2NextTurnButton.interactable = false;
+        p2EndTurnButton.gameObject.SetActive(false);
+        p2NextTurnButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -357,11 +357,19 @@ public class UserInput : MonoBehaviour
             toggleCamera.ToggleP1Camera();
 
         }
+        p1EndTurnButton.gameObject.SetActive(true);
+        p1NextTurnButton.gameObject.SetActive(true);
         p1EndTurnButton.interactable = true;
         p1NextTurnButton.interactable = false;
 
+        p2EndTurnButton.gameObject.SetActive(false);
+        p2NextTurnButton.gameObject.SetActive(false);
         p2EndTurnButton.interactable = true;
         p2NextTurnButton.interactable = false;
+
+        p2OpponentLeftText.text = "0";
+        p2OpponentCentText.text = "0";
+        p2OpponentRighText.text = "0";
 
         selectedCard = null;
         EndTurn();
@@ -386,6 +394,12 @@ public class UserInput : MonoBehaviour
             }
             toggleCamera.ToggleP2Camera();
             isP1Turn = !isP1Turn;
+            p2EndTurnButton.gameObject.SetActive(true);
+            p2EndTurnButton.interactable = true;
+            p2NextTurnButton.gameObject.SetActive(true);
+            p2NextTurnButton.interactable = false;
+            p1EndTurnButton.gameObject.SetActive(false);
+            p1NextTurnButton.gameObject.SetActive(false);
             P1CombatColor(selectedCard);
         }
         else if (toggleCamera.p2Camera.activeSelf && (p2PlayedCards.Count > 0) && CheckPlacement(false) )
