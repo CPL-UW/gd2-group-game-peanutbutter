@@ -470,7 +470,7 @@ public class UserInput : MonoBehaviour
         {
             card.transform.position = new Vector3(game.p2DiscardPos.transform.position.x, game.p2DiscardPos.transform.position.y, game.p2DiscardPos.transform.position.z - 0.1f);
             card.GetComponent<Selectable>().faceUp = true;
-            game.p1Discard.Add(card.name);
+            game.p2Discard.Add(card.name);
         }
 
         int p1HandCount = game.p1HandCards.Count;

@@ -94,13 +94,15 @@ public class Game_SP : MonoBehaviour
             {
                 playerDeck.Add(card);
             }
+            p1Discard.Clear();
         }
         if (computerDeck.Count < 5)
         {
             foreach (string card in p2Discard)
             {
-                playerDeck.Add(card);
+                computerDeck.Add(card);
             }
+            p2Discard.Clear();
         }
     }
 
